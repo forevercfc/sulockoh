@@ -235,7 +235,27 @@ background-color: white;
 	right:  0;
 }
 
+#smallMenu{
+	background-color: white;
+	height: 100%;
+	right: 0;
+	width: 463px;
+	min-width: 463px;
+	display: block;
+	position: fixed;
+	z-index: 99999;
 
+}
+
+#smallMenu img{
+	width: 423px;
+	height: 429px;
+}
+#smallMenu .material-symbols-outlined{
+	position: relative;
+	left: 50%;
+	border: 1px solid red;
+}
 /*========================섹션1===================*/
 
 #sec1{
@@ -1343,13 +1363,12 @@ margin-left: 10px;
 									</span>
 								</a>
 							</li>
-							<li>
-								<a href="">
+							<li class="burgerBtn">
+								
 									<span class="material-symbols-outlined">
 										menu
 									</span>
-								</a>
-							</li>
+															</li>
 						</ul>
 						<ul id="login">
 							<li><a href="">로그인</a></li>
@@ -1394,7 +1413,35 @@ margin-left: 10px;
 						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/CG/WL/20231130172838557BP.jpg" width="330px" height="370px" alt="">
 					</div>
 				</div>
-			
+					
+				<div id="smallMenu">
+					<div>
+						<div>
+							<span class="material-symbols-outlined">close</span>
+						</div>
+					</div>
+					<div>
+						<ul>
+							<li>제품</li>
+							<hr>
+							<li>홀리데이</li>
+							<hr>
+							<li>다다일상</li>
+							<hr>
+							<li>브랜드</li>
+						</ul>
+					</div>
+					<img src="https://image.osulloc.com/upload/kr/ko/adminImage/CG/WL/20231130172838557BP.jpg"alt="">
+					<div>
+						<div>매장찾기</div>
+						<div>공지사항</div>
+						<div>고객센터</div>
+						<div>뷰티포인트 추후 적립</div>
+					</div>
+				</div>
+
+
+
 				<section id="sec1">
 					<!-- 메인 케로셀 -->
 					<div id="carousel">
@@ -1906,6 +1953,36 @@ margin-left: 10px;
     		}
     	});
     });
+
+
+			// ======================버거메뉴=========================
+
+		$(function(){
+    let burger_close_Btn = $("#smallMenu span");
+    let burgerMenuBtn = $(".burgerBtn");
+    let burgerMenu = $("#smallMenu");
+    let body = $("body");
+
+    burgerMenu.hide();
+
+    burgerMenuBtn.click(function(event){
+        event.stopPropagation(); 
+        burgerMenu.show();
+        body.css("overflow", "hidden"); // 배경 스크롤 비활성화
+    });
+
+    burger_close_Btn.click(function(){
+        burgerMenu.hide();
+        body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
+    });
+
+    $(document).click(function() {
+        burgerMenu.hide();
+        body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
+    });
+});
+
+
 
 
 //==============================섹션 1 캐로셀-==========================
