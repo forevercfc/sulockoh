@@ -435,7 +435,7 @@ height: 80%;
 	bottom: 10%;
 	text-align: center;
 	line-height: 40px;
-
+	z-index: 999;
 }
 
 .moreBox a{
@@ -727,7 +727,6 @@ margin: 10px 0 10px 0 ;
 	width: 50%;
 }
 #sec7 .swiper {
-	
 	width: 64%; 
 	height: auto; 
 	padding-top: 50px;
@@ -1225,6 +1224,9 @@ margin-left: 10px;
 #sec7, #sec8{
 	top: 0;
 }
+#sec7 .swiper{
+	width: 100%;
+}
 #sec7 .dada_title{
 	position: relative;
 	left: 5%;
@@ -1370,12 +1372,11 @@ margin-left: 10px;
 									</span>
 								</a>
 							</li>
-							<li class="burgerBtn">
-								
+							<li class="burgerBtn">								
 									<span class="material-symbols-outlined">
 										menu
 									</span>
-															</li>
+							</li>
 						</ul>
 						<ul id="login">
 							<li><a href="">로그인</a></li>
@@ -1386,7 +1387,7 @@ margin-left: 10px;
 				<div class="hideMenu">
 					<ul>
 						<a href="subpage1.html"><li>위클리베스트(subpage1연결)</li></a>
-						<li>베스트</li>
+						<a href="subpage2.html"><li>베스트((subpage2연결))</li></a>
 					</ul>
 					<ul>
 						<li>티제품</li>
@@ -1430,7 +1431,7 @@ margin-left: 10px;
 						<ul>
 							<a href="subpage1.html"><li>위클리베스트(subpage1연결)</li></a>
 							<hr>
-							<li>베스트</li>
+							<a href="subpage2.html"><li>베스트(subpage2연결)</li></a>
 							<hr>
 							<li>다다일상</li>
 							<hr>
@@ -1578,7 +1579,7 @@ margin-left: 10px;
 					</div>
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
-					<div class="moreBox"><a href="#">더보기 ></a></div>
+					<div class="moreBox"><a href="subpage1.html">더보기></a></div>
 				</section>
 				<section id="sec3">
 					<div class="onlyToday">
