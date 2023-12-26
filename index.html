@@ -120,6 +120,9 @@ section, #Mainmenu{
 #Mainmenu:hover{
 	background-color: white;
 }
+#Mainmenu li, #smallMenu .material-symbols-outlined{
+	cursor: pointer;
+}
 
 .left_box ul li a, .right_box ul li a {
 	color: white;
@@ -191,6 +194,8 @@ section, #Mainmenu{
 }
 
 
+
+
 /*    ============================숨겨진 메뉴================*/
 .hideMenu{
 	position: fixed;
@@ -217,7 +222,7 @@ background-color: white;
 
 }
 .hideMenu ul li:nth-child(1){
-	font-weight: bold;
+/*	font-weight: bold;*/
 }
 .hideMenu ul li:hover{
 	color: green;
@@ -1378,8 +1383,7 @@ margin-left: 10px;
 				</header>
 				<div class="hideMenu">
 					<ul>
-						<li>베스트</li>
-						<li>위클리베스트</li>
+						<a href="subpage1.html"><li>위클리베스트(subpage1연결)</li></a>
 						<li>베스트</li>
 					</ul>
 					<ul>
