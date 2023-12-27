@@ -369,7 +369,11 @@ font-weight: bold;
 	position: fixed;
 	z-index: 99999;
 	padding: 10px;
+	font-weight: bold;
 
+}
+#smallMenu ul li{
+	margin: 20px;
 }
 
 #smallMenu img{
@@ -385,6 +389,10 @@ font-weight: bold;
 
 #Mainmenu li, #smallMenu .material-symbols-outlined{
 	cursor: pointer;
+}
+
+.burgerBtn{
+	opacity: 0;
 }
 
 
@@ -571,7 +579,9 @@ margin: 10px;
 
 
 
-
+	.burgerBtn{
+	opacity: 1;
+}
 
 
 
@@ -1027,33 +1037,33 @@ margin: 10px;
 
 
 
-				// ======================버거메뉴=========================
+									$(function(){
+    let burger_close_Btn = $("#smallMenu span");
+    let burgerMenuBtn = $(".burgerBtn");
+    let burgerMenu = $("#smallMenu");
+    let body = $("body");
 
-					$(function(){
-						let burger_close_Btn = $("#smallMenu span");
-						let burgerMenuBtn = $(".burgerBtn");
-						let burgerMenu = $("#smallMenu");
-						let body = $("body");
+    burgerMenu.hide();
 
-						burgerMenu.hide();
+    // smallMenu 내부에서 스크롤이 가능하도록 설정
+    burgerMenu.css("overflow-y", "auto");
 
-						burgerMenuBtn.click(function(event){
-							event.stopPropagation(); 
-							burgerMenu.show();
+    burgerMenuBtn.click(function(event){
+        event.stopPropagation(); 
+        burgerMenu.show();
         body.css("overflow", "hidden"); // 배경 스크롤 비활성화
     });
 
-						burger_close_Btn.click(function(){
-							burgerMenu.hide();
+    burger_close_Btn.click(function(){
+        burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
 
-						$(document).click(function() {
-							burgerMenu.hide();
+    $(document).click(function() {
+        burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
-					});
-
+});
 
 
 

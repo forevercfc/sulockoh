@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>수정설록_위클리베스트</title>
+	<title>수정설록_스토리</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -95,8 +95,9 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
-/*	border: 3px solid orange;*/
-}
+		border: 3px solid orange;
+
+	}
 /*=====================메인메뉴====================*/
 #Mainmenu{
 	position: fixed;
@@ -228,138 +229,6 @@ background-color: white;
 	right:  0;
 }
 
-.weekly_Logo{
-/*	border: 1px solid red;*/
-position: relative;
-width: 100%;
-height: 400px;
-display: flex;
-gap: 20px;
-flex-direction: row;
-align-content: center;
-justify-content: center;
-align-items: center;
-margin-top: 80px;																		
-}
-.weekly_Logo hideMenu_img{
-	width: 100%;
-	height: 100%;
-}
-
-
-.weekly_Logo .best{
-	position: absolute;
-	font-size: 48px;
-	font-weight: bold;
-}
-
-
-
-
-.weekly {
-/*    border: 1px solid red;*/
-width: 880px;
-position: relative;
-margin-left: auto;
-margin-right: auto;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 10px;
-margin-bottom: 20px;
-}
-
-.weekly_list {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-.weekly_list_number{
-/*	border: 1px solid red;*/
-width: 30px;
-height: 30px;
-text-align: center;
-position: relative;
-top: 30px;
-background-color: #666666;
-color: white;
-font-weight: bold;
-}
-.weekly_list img{
-	background-color: #F9F9F9;
-	width: 211px; 
-	height: 236px;
-}
-
-.weekly_list_discount{
-	font-size: 14px;
-	color: gray;
-	text-decoration: line-through;
-}
-.weekly_list_cost{
-	font-size: 18px;
-	font-weight: bold;
-}
-.weekly_list_sale{
-	color: #6E9A9A;
-	font-weight: bold;
-}
-.weekly_list_box{
-	border: 1px solid #A89079;
-	background-color: #A89079;
-	width: 70px;
-	text-align: center;
-	color: white;
-	font-weight: bold;
-}
-
-.choice_box, .weekly_title{
-/*	border: 1px solid red;*/
-height: 100px;
-display: flex;
-align-items: center;
-width: 880px;
-margin-left: auto;
-margin-right: auto;
-font-weight: bold;
-}
-
-.wbest_choice{
-	
-	border: 1px solid #6C801A;
-	background-color: #6C801A;
-	width: 147px;
-	text-align: center;
-	height: 40px;
-	font-size: 18px;
-	margin-right: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 100px; 
-	
-}
-.best_choice{
-	border: 1px solid  #F6F6F6;
-	width: 96px;
-	text-align: center;
-	height: 40px;
-	font-size: 18px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #F6F6F6;
-	border-radius: 100px; 
-	
-}
-.wbest_choice a{
-	color: white;
-	font-weight: bold;
-}
-.best_choice a{
-	color: #999999;
-	font-weight: 500;
-}
-
 /*======================작은사이즈 버거메뉴===========*/
 #smallMenu{
 	background-color: white;
@@ -396,23 +265,21 @@ font-weight: bold;
 .burgerBtn{
 	opacity: 0;
 }
-
-
-
-#sec9{
+/*=============================== 푸터================================*/
+#footer{
 	height: 450px;  
 	margin-top: 150px;
 	margin-bottom: 500px;
 }
 
-#sec9 .footer_login{
+#footer .footer_login{
 	height: 15%;
 	background-color: #67625D;
 	display: flex;
 	justify-content: center;
 	position: relative;
 }
-#sec9 .footer_login_box{
+#footer .footer_login_box{
 	width: 80%;
 	height: 100%;
 	left: 15%;
@@ -420,7 +287,7 @@ font-weight: bold;
 	justify-content: flex-end;
 	align-items: center;
 }
-#sec9 .footer_login p{
+#footer .footer_login p{
 /*	border: 1px solid black; */
 width: 94px;
 height: 40px;
@@ -432,10 +299,10 @@ position: relative;
 border-radius: 10%;
 line-height: 40px;
 }
-#sec9 .footer_login p, #sec9 .footer_login img{
+#footer .footer_login p, #footer .footer_login img{
 	margin: 0 10px;
 }
-#sec9 .footer_top{
+#footer .footer_top{
 	position: relative;
 	width: 100%;
 	height: 40%;
@@ -443,14 +310,14 @@ line-height: 40px;
 display: flex;
 background-color: #F2F2F2;
 }
-#sec9 .footer_top_info{
+#footer .footer_top_info{
 /*	border: 1px solid red;*/
 height: 100%;
 width: 40%;
 margin-left: 10%;
 display: flex;
 }
-#sec9 .footer_top_info_left, #sec9 .footer_top_info_right{
+#footer .footer_top_info_left, #footer .footer_top_info_right{
 	width: 50%;
 	height: 100%;
 	display: flex;
@@ -461,38 +328,38 @@ display: flex;
 	line-height: 25px;
 }
 
-#sec9 .footer_top_info_left_title{
+#footer .footer_top_info_left_title{
 	font-size: 14px;
 	color: dimgray;
 }
-#sec9 .footer_top_info_left_email{
+#footer .footer_top_info_left_email{
 	font-size: 18px;
 }
-#sec9 .footer_top_info_left_tell{
+#footer .footer_top_info_left_tell{
 	font-size: 33.7px;
 }
-#sec9 .footer_top_info_left_time{
+#footer .footer_top_info_left_time{
 	font-size: 12px;
 	color: dimgray;
 }
 
-#sec9 .footer_top_info_right_title{
+#footer .footer_top_info_right_title{
 	font-size: 14px;
 	color: dimgray;
 }
-#sec9 .footer_top_info_right_email{
+#footer .footer_top_info_right_email{
 	font-size: 18px;
 }
-#sec9 .footer_top_info_right_kakao{
+#footer .footer_top_info_right_kakao{
 	font-size: 13px;
 }
-#sec9 .footer_top_info_right_time{
+#footer .footer_top_info_right_time{
 	font-size: 12px;
 	color: dimgray;
 }
 
 
-#sec9 .footer_top_icon{
+#footer .footer_top_icon{
 	width: 45%;
 	margin-right: 5%;
 	display: flex;
@@ -501,7 +368,7 @@ display: flex;
 
 
 }
-#sec9 .footer_top_icon div{
+#footer .footer_top_icon div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -509,7 +376,7 @@ display: flex;
 	white-space: nowrap;
 }
 
-#sec9 .footer_btm{
+#footer .footer_btm{
 /*	border: 1px solid red;*/
 width: 80%;
 height: 45%;
@@ -520,35 +387,83 @@ justify-content: center;
 align-items: center;
 }
 
-#sec9 .footer_btm a{
+#footer .footer_btm a{
 	width: 120px;
 }
 
-#sec9 .footer_btm_img1{
+#footer .footer_btm_img1{
 	width: 112px;
 	height: 158px;
 	position: relative;
 	top: 20px;
 }
-#sec9 .footer_btm_img2{
+#footer .footer_btm_img2{
 	width: 300px;
 	height: 110px;
 	position: relative;
 	border: 0.5px solid lightgray;
 
 }
-#sec9 .footer_btm .footer_btmtxt1{
+#footer .footer_btm .footer_btmtxt1{
 	font-size: 12px;
 	font-weight: bold;
 }
-#sec9 .footer_btm .footer_btmtxt2, #sec9 .footer_btm .footer_btmtxt3{
+#footer .footer_btm .footer_btmtxt2, #footer .footer_btm .footer_btmtxt3{
 	font-size: 12px;
 	color: #A0A0A0;
 }
 
-#sec9 .mini_footer, #sec9 .footer_tgBox {
+#footer .mini_footer, #footer .footer_tgBox {
 	display: none;
 }
+
+
+/*===============================섹션1=======================================*/
+#sec1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 뷰포트 높이에 맞춤 */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* iframe 위의 클릭 이벤트 방지 */
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 56.25vw; /* 16:9 비율 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* 16:9 비율 */
+}
+
+.sec1_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* 텍스트를 비디오 위에 위치 */
+    /* 추가적인 스타일링 */
+}
+
+.sec1_text h1, .sec1_text p {
+    color: white;
+}
+
+
+
+
+
+
 
 
 /*==========================미디어 쿼리======================*/
@@ -560,101 +475,78 @@ align-items: center;
 }
 @media screen and (max-width: 1050px){
 
-/*	===============#sec9==========*/
-/*#sec9{
-	position: relative;
-	top: -100px;
-}*/
-
-.weekly {
-/*    border: 1px solid red;*/
-width: 100%;  
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-margin: 10px;
-}
-
-.weekly_list img{
-	background-color: #F9F9F9;
-	width: 100%; 
-	height: auto;
-}
 
 	.burgerBtn{
-	opacity: 1;
-}
+		opacity: 1;
+	}
+	#footer .footer_tgBox{
+		display: flex;
+		justify-content: center;
+	}
 
+	#footer .footer_tgBox #toggleFooter{
+		border: none;
+		background-color: white;
+		font-size: 1em;
+		cursor: pointer;
+	}
 
+	#footer .footer_login,
+	#footer .footer_top_icon,
+	#footer .footer_btm{
+		display: none;
+	}
+	#footer .footer_top_info{
+		width: 100%;
+	}
 
+	#footer .footer_top_info_left_title{
+		font-size: 10px;
+		color: dimgray;
+	}
+	#footer .footer_top_info_left_email{
+		font-size: 15px;
+	}
+	#footer .footer_top_info_left_tell{
+		font-size: 22px;
+	}
+	#footer .footer_top_info_left_time{
+		font-size: 10px;
+		color: dimgray;
+	}
 
+	#footer .footer_top_info_right_title{
+		font-size: 10px;
+		color: dimgray;
+	}
+	#footer .footer_top_info_right_email{
+		font-size: 15px;
+	}
+	#footer .footer_top_info_right_kakao{
+		font-size: 11px;
+	}
+	#footer .footer_top_info_right_time{
+		font-size: 10px;
+		color: dimgray;
+	}
+	#footer .mini_footer .hide_footer_txt{
+		background-color: #F2F2F2;
+	}
 
-#sec9 .footer_tgBox{
-	display: flex;
-	justify-content: center;
-}
+	#footer .mini_footer .hide_footer_txt p{
+		font-size: 12px;
+		color: gray;
+		margin-left: 10px;
+	}
+	#footer .mini_footer .footer_btmtxt1{
+		font-size: 12px;
+		text-align: center;
 
-#sec9 .footer_tgBox #toggleFooter{
-	border: none;
-	background-color: white;
-	font-size: 1em;
-	cursor: pointer;
-}
-
-#sec9 .footer_login,
-#sec9 .footer_top_icon,
-#sec9 .footer_btm{
-	display: none;
-}
-#sec9 .footer_top_info{
-	width: 100%;
-}
-
-#sec9 .footer_top_info_left_title{
-	font-size: 10px;
-	color: dimgray;
-}
-#sec9 .footer_top_info_left_email{
-	font-size: 15px;
-}
-#sec9 .footer_top_info_left_tell{
-	font-size: 22px;
-}
-#sec9 .footer_top_info_left_time{
-	font-size: 10px;
-	color: dimgray;
-}
-
-#sec9 .footer_top_info_right_title{
-	font-size: 10px;
-	color: dimgray;
-}
-#sec9 .footer_top_info_right_email{
-	font-size: 15px;
-}
-#sec9 .footer_top_info_right_kakao{
-	font-size: 11px;
-}
-#sec9 .footer_top_info_right_time{
-	font-size: 10px;
-	color: dimgray;
-}
-#sec9 .mini_footer .hide_footer_txt{
-	background-color: #F2F2F2;
-}
-
-#sec9 .mini_footer .hide_footer_txt p{
-	font-size: 12px;
-	color: gray;
-	margin-left: 10px;
-}
-#sec9 .mini_footer .footer_btmtxt1{
-	font-size: 12px;
-	text-align: center;
-
-}
+	}
 }
 
 </style>
+
 <body>
 	<div id="wrapper">
 		<header id="Mainmenu">
@@ -687,9 +579,9 @@ margin: 10px;
 								</a>
 							</li>
 							<li class="burgerBtn">								
-									<span class="material-symbols-outlined">
-										menu
-									</span>
+								<span class="material-symbols-outlined">
+									menu
+								</span>
 							</li>
 						</ul>
 						<ul id="login">
@@ -762,191 +654,36 @@ margin: 10px;
 					</div>
 				</div>
 
-
-				<div class="weekly_Logo">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/top_banner/best_banner.jpg" alt="">
-					<div class="best">위클리 베스트</div>
-				</div>
-
-				<div class="choice_box">
-					<div class="wbest_choice"><a href="#"> 위클리 베스트</a></div>
-					<div class="best_choice"><a href="subpage2.html"> 베스트</a></div>
-				</div>
-				<hr>
-				<div class="weekly_title">2023년 12월 5째주</div>
-
-				<div class="weekly">
-					<div class="weekly_list">
-						<div class="weekly_list_number">1</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/ZL/VH/20231108164813378KP.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">티타임 포 캠퍼&티탄 싱글 머그 300</div>
-							<div class="weekly_list_discount">65,000원</div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">53,000원</div>
-								<div class="weekly_list_sale">18%</div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
-
+				<section id="sec1">
+					<div class="video-background">
+						<iframe src="https://player.vimeo.com/video/709357001?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">2</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/UJ/EE/20231117152950667NN.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">2023 어드벤트 캘린더</div>
-							<div class="weekly_list_discount">60,000원</div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">42,000원</div>
-								<div class="weekly_list_sale">30%</div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
-
+					<div class="sec1_text">
+						<h1>TEA FROM JEJU</h1>
+						<p>대한민국이 가진 전혜의 자연 유산 제주,<br>
+							화산 제주가 가진 경이로운 생명력으로 <br>
+						오설의 차는 탄생합니다.</p>
 					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">3</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/ML/IV/20231207153304745ZG.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">[경성크리처 콜라보]월광 블라썸</div>
-							<div class="weekly_list_discount">27,000원</div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">24,300원</div>
-								<div class="weekly_list_sale">10%</div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
+				</section>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">4</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/EX/RE/20231129145758957KH.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">[마지막 재입고] 제주 말차 슈톨렌</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">32,000원</div>
-								
-							</div>
-							<div class="weekly_list_box"></div>
-						</div>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">5</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/JZ/JB/20231207153016878NB.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">스노우그린 와플 세트</div>
-							<div class="weekly_list_discount">28,300원</div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">25,470원</div>
-								<div class="weekly_list_sale">10%</div>
-							</div>
-							<div class="weekly_list_box">임시품절</div>
-						</div>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">6</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/FD/QM/20231128131811148WE.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">시그니처 얼그레이 20입</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">25,000원</div>
-								<div class="weekly_list_sale"></div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
+				<section id="sec2">2</section>
+				<section id="sec3">3</section>
+				<section id="sec4">4</section>
+				<section id="sec5">5</section>
+				<section id="sec6">6</section>
+				<section id="sec7">7</section>
+				<section id="sec8">8</section>
+				<section id="sec9">9</section>
+				<section id="sec10">10</section>
+				<section id="sec11">11</section>
+				<section id="sec12">12</section>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">7</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/MS/QC/20231128115518656JA.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">스윗 허니 블랙티</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">9,500원</div>
-								<div class="weekly_list_sale"></div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">8</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/CE/NV/20231213094841316ZH.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">귤꽃향 블라썸 티</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">9,500원</div>
-								<div class="weekly_list_sale"></div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">9</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/OA/EO/304_20200707155646390AC.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">세작 20입</div>
-							<div class="weekly_list_discount">28,000원</div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">22,400원</div>
-								<div class="weekly_list_sale">20%</div>
-							</div>
-							
-						</div>
 
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">10</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/MB/PC/304_20230518093624132CX.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">삼다 꿀배 티0</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">9,500원</div>
-								<div class="weekly_list_sale"></div>
-							</div>
-							
-						</div>
-
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">11</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/OA/XH/20231005161253915NJ.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">꽃귤향을 품은 우잣담 20입</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">25,000원</div>
-								<div class="weekly_list_sale"></div>
-							</div>
-							<div class="weekly_list_box">신제품</div>
-						</div>
-
-					</div>
-					<div class="weekly_list">
-						<div class="weekly_list_number">12</div>
-						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/JY/QU/304_20210825170710069ZN.png" alt="">
-						<div class="weekly_list_text">
-							<div class="weekly_list_title">시크릿 티 스토리</div>
-							<div class="weekly_list_discount"></div>
-							<div class="weekly_list_priceBox">
-								<div class="weekly_list_cost">47,000원</div>
-								<div class="weekly_list_sale">18%</div>
-							</div>
-							
-						</div>
-
-					</div>
-				</div>
-
-				<section id="sec9">
+				<section id="footer">
 					<div class="footer_tgBox">
 						<div>오설록 사업자 정보확인</div>
 						<button id="toggleFooter">>Click!<</button>
@@ -1035,8 +772,9 @@ margin: 10px;
 					</section>
 
 				</div>
+
 				<script>
-				// ================메인메뉴 스크립트====================
+		// ================메인메뉴 스크립트====================
 					$(function () {
 						let Mainli = $("#Mainmenu");
 						let MainA = $("#Mainmenu a");
@@ -1126,33 +864,33 @@ margin: 10px;
 
 
 
-										$(function(){
-    let burger_close_Btn = $("#smallMenu span");
-    let burgerMenuBtn = $(".burgerBtn");
-    let burgerMenu = $("#smallMenu");
-    let body = $("body");
+					$(function(){
+						let burger_close_Btn = $("#smallMenu span");
+						let burgerMenuBtn = $(".burgerBtn");
+						let burgerMenu = $("#smallMenu");
+						let body = $("body");
 
-    burgerMenu.hide();
+						burgerMenu.hide();
 
     // smallMenu 내부에서 스크롤이 가능하도록 설정
-    burgerMenu.css("overflow-y", "auto");
+						burgerMenu.css("overflow-y", "auto");
 
-    burgerMenuBtn.click(function(event){
-        event.stopPropagation(); 
-        burgerMenu.show();
+						burgerMenuBtn.click(function(event){
+							event.stopPropagation(); 
+							burgerMenu.show();
         body.css("overflow", "hidden"); // 배경 스크롤 비활성화
     });
 
-    burger_close_Btn.click(function(){
-        burgerMenu.hide();
+						burger_close_Btn.click(function(){
+							burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
 
-    $(document).click(function() {
-        burgerMenu.hide();
+						$(document).click(function() {
+							burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
-});
+					});
 
 
 
@@ -1180,5 +918,7 @@ margin: 10px;
 					});
 
 				</script>
+
+
 			</body>
 			</html>

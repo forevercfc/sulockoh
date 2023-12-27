@@ -250,7 +250,11 @@ background-color: white;
 	position: fixed;
 	z-index: 99999;
 	padding: 10px;
+	font-weight: bold;
 
+}
+#smallMenu ul li{
+	margin: 20px;
 }
 
 #smallMenu img{
@@ -262,6 +266,9 @@ background-color: white;
 	left: 90%;
 	margin-top: 10px;
 /*	border: 1px solid red;*/
+}
+.burgerBtn{
+	opacity: 0;
 }
 /*========================섹션1===================*/
 
@@ -966,6 +973,9 @@ align-items: center;
 
 @media screen and (max-width: 1050px){
 
+	.burgerBtn{
+	opacity: 1;
+}
 
 	#sec1{
 		height: 100%;
@@ -1338,6 +1348,7 @@ margin-left: 10px;
 	text-align: center;
 
 }
+}
 </style>
 
 
@@ -1373,9 +1384,9 @@ margin-left: 10px;
 								</a>
 							</li>
 							<li class="burgerBtn">								
-									<span class="material-symbols-outlined">
-										menu
-									</span>
+								<span class="material-symbols-outlined">
+									menu
+								</span>
 							</li>
 						</ul>
 						<ul id="login">
@@ -1420,7 +1431,7 @@ margin-left: 10px;
 						<img src="https://image.osulloc.com/upload/kr/ko/adminImage/CG/WL/20231130172838557BP.jpg" width="330px" height="370px" alt="">
 					</div>
 				</div>
-					
+
 				<div id="smallMenu">
 					<div>
 						<div>
@@ -1964,13 +1975,16 @@ margin-left: 10px;
 
 			// ======================버거메뉴=========================
 
-		$(function(){
+					$(function(){
     let burger_close_Btn = $("#smallMenu span");
     let burgerMenuBtn = $(".burgerBtn");
     let burgerMenu = $("#smallMenu");
     let body = $("body");
 
     burgerMenu.hide();
+
+    // smallMenu 내부에서 스크롤이 가능하도록 설정
+    burgerMenu.css("overflow-y", "auto");
 
     burgerMenuBtn.click(function(event){
         event.stopPropagation(); 
