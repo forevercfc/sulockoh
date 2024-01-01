@@ -108,6 +108,7 @@
 	}
 
 
+
 /*=====================메인메뉴====================*/
 #Mainmenu{
 	position: fixed;
@@ -682,6 +683,300 @@ min-width: 420px;
 }
 
 
+/*==========================섹션3*/
+#sec3{
+	display: flex;
+	align-items: center;
+}
+
+.sec3_box{
+/*	border: 1px solid red;*/
+width: 100%;
+display: flex;
+height: 60%;
+justify-content: center;
+align-items: center;
+}
+.sec3_flexbox{
+	display: flex;
+	width: 80%;
+/*	border: 1px solid black;*/
+gap: 20%;
+justify-content: center;
+flex-wrap: wrap;
+}
+.sec3_title h1{
+	margin-bottom: 30px;
+	font-size: 44px;
+	color: #717E8F;
+	font-weight: 500;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+.sec3_title p{
+	margin-bottom: 30px;
+	font-size: 18px;
+	color: #666666;
+	font-weight: 500;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+.sec3_title button{
+	border: none;
+	cursor: pointer;
+	background-color: white;
+	text-decoration: underline;
+	font-size: 18px;
+	color: #717E8F;
+	font-weight: 500;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec3_title{
+/*	border: 1px solid blue;*/
+width: 435px;
+min-width: 300px;
+}
+
+.sec3_img img{
+	width: 435px;
+}
+
+/*섹션3 모달=======================================*/
+#sec3_modal{
+	width: 340px;
+	height: 570px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease-out;
+	border-radius: 10px;
+	background-color: white;
+	z-index: 9999;
+}
+.sec3_modal_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sec3_modal_title button{
+	position: relative;
+	left: 60px;
+	background-color: white;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.sec3_modal_body{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.sec3_modal_body>div{
+	display: flex;
+	justify-content: center;
+}
+.sec3_modal_body>div>div{
+	width: 173px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.sec3_modal_body>div>div>img{
+	width: 80px;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9998; /* 모달 바로 뒤에 위치하도록 z-index 설정 */
+	display: none;
+}
+
+
+
+
+/*-========================섹션4==============================*/
+#sec4{
+	height: 300%;
+}
+.sec4_box1, .sec4_box2, .sec4_box3{
+/*	border: 1px solid blue;*/
+	width: 100%;
+	height: 33.3333%;
+	display: flex;
+	justify-content: center;
+}
+
+.sec4_box1{
+/*	background: url(https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_item_1.jpg);*/
+background-size: cover;
+background-position: center;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_item_1.jpg);;
+}
+
+.sec4_box1_text{
+/*	border: 1px solid red;*/
+position: relative;
+height: 45%;
+width: 80%;
+margin-top: 5%;
+}
+.sec4_box1_text h1{
+/*	border: 1px solid blue;*/
+display: flex;	
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 200px;
+color: white;
+font-weight: 500;
+font-family: 'Gowun Dodum', sans-serif;
+font-size: 32px;
+}
+.sec4_box1_text p{
+	margin-bottom: 3%;
+	color: white;
+	font-weight: 500;
+	font-size: 16px;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec4_box1_text button{
+	border: none;
+	text-decoration: underline;
+	cursor: pointer;
+	color: white;
+	font-size: 16px;
+	background-color: #B9BBBF;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec4_box1_text .sec4_loca{
+	text-align: center;
+	position: relative;
+	top: 400px;
+	color: white;
+	font-weight: 500;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+
+
+
+.sec4_box2{
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_item_2.jpg);
+}
+
+.sec4_box2_text{
+/*	border: 1px solid red;*/
+position: relative;
+height: 45%;
+width: 80%;
+margin-top: 5%;
+}
+.sec4_box2_text h1{
+/*	border: 1px solid blue;*/
+display: flex;	
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 200px;
+color: white;
+font-weight: 500;
+font-family: 'Gowun Dodum', sans-serif;
+font-size: 32px;
+}
+.sec4_box2_text p{
+	margin-bottom: 3%;
+	color: white;
+	font-weight: 500;
+	font-size: 16px;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec4_box2_text button{
+	border: none;
+	text-decoration: underline;
+	cursor: pointer;
+	color: white;
+	font-size: 16px;
+	background-color: #94ACC2;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec4_box2_text .sec4_loca{
+	text-align: center;
+	position: relative;
+	top: 350px;
+	color: white;
+	font-weight: 500;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+
+.sec4_box3{
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_item_3.jpg);
+}
+
+.sec4_box3_text{
+/*	border: 1px solid red;*/
+position: relative;
+height: 45%;
+width: 80%;
+margin-top: 5%;
+}
+.sec4_box3_text h1{
+/*	border: 1px solid blue;*/
+display: flex;	
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 200px;
+color: white;
+font-weight: 500;
+font-family: 'Gowun Dodum', sans-serif;
+font-size: 32px;
+}
+.sec4_box3_text p{
+	margin-bottom: 3%;
+	color: white;
+	font-weight: 500;
+	font-size: 16px;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec4_box3_text button{
+	border: none;
+	text-decoration: underline;
+	cursor: pointer;
+	color: white;
+	font-size: 16px;
+	background-color: #808C9A;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+.sec4_box3_text .sec4_loca{
+	text-align: center;
+	position: relative;
+	top: 400px;
+	color: white;
+	font-weight: 500;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
 
 
 
@@ -695,19 +990,22 @@ min-width: 420px;
 		display: none;
 	}
 	.mySwiper1 .swiper-slide .swiper_txt p{
-	margin: 0 100px;
-}
+		margin: 0 100px;
+	}
 
-.mySwiper1 .swiper-button-next{
-	position: absolute;
-	right: 10%;
-	color: lightgray;
-}
-.mySwiper1  .swiper-button-prev{
-	position: absolute;
-	left: 10%;
-	color: lightgray;
-}
+	.mySwiper1 .swiper-button-next{
+		position: absolute;
+		right: 10%;
+		color: lightgray;
+	}
+	.mySwiper1  .swiper-button-prev{
+		position: absolute;
+		left: 10%;
+		color: lightgray;
+	}
+	.sec3_flexbox{
+		gap: 100px;
+	}
 
 }
 @media screen and (max-width: 1050px){
@@ -784,6 +1082,7 @@ min-width: 420px;
 
 
 
+
 }
 
 
@@ -820,15 +1119,15 @@ min-width: 420px;
 		font-family: 'Gowun Dodum', sans-serif;
 	}
 	.mySwiper1 .swiper-button-next{
-	position: absolute;
-	right: 0;
-	color: lightgray;
-}
-.mySwiper1  .swiper-button-prev{
-	position: absolute;
-	left: 0;
-	color: lightgray;
-}
+		position: absolute;
+		right: 0;
+		color: lightgray;
+	}
+	.mySwiper1  .swiper-button-prev{
+		position: absolute;
+		left: 0;
+		color: lightgray;
+	}
 
 	.mySwiper1 .swiper-slide .swiper_txt p{
 		color: #75828E!important;
@@ -837,6 +1136,31 @@ min-width: 420px;
 		font-family: 'Gowun Dodum', sans-serif;
 		margin: 0 10px;
 	}
+
+	.sec3_img img{
+		width: 100%;
+		min-width: 200px;
+	}
+	.sec3_title{
+/*	border: 1px solid blue;*/
+width: 100%;
+min-width: 200px;
+}
+.sec3_flexbox{
+	width: 90%;
+}
+.sec3_title h1{
+	font-size: 30px;
+}
+.sec3_title p{
+	font-size: 18px;
+}
+.sec3_title button{
+	font-size: 18px;
+}
+.sec3_flexbox{
+	gap: 30px;
+}
 
 }
 
@@ -974,7 +1298,7 @@ min-width: 420px;
 
 
 				<section id="sec2">
-					2
+					
 					<div id="circle_div"></div>
 
 					<!-- Swiper 첫번째 -->
@@ -1151,8 +1475,143 @@ min-width: 420px;
 
 
 				</section>
-				<section id="sec3">3</section>
-				<section id="sec4">4</section>
+				<section id="sec3">
+					<div class="sec3_box">
+						<div class="sec3_flexbox">
+							<div class="sec3_title">
+								<h1>오설록의 제주 차밭</h1>
+								<p>
+									약 100만 평에 달하는 3개의 오설록 유기농 차밭은 화산섬의 지역적 기후 환경에 따라 각각의 색과 향, 그리고 맛이 특별한 차를 생산하고 있습니다.
+								</p>
+								<button>유기농/품질관리 인증 정보(Click here!)</button>
+							</div>
+							<div class="sec3_img">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="modal-backdrop"></div>
+					<div id="sec3_modal">
+						<div class="sec3_modal_title">
+							<p>유기농/품질관리 인증 정보</p>
+							<button class="close">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt="">
+							</button>
+						</div>
+						<div class="sec3_modal_body">
+							<div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_1.png" alt="">
+									<p>USDA-NOP
+										<br>
+										미농무성 국가 유기 인증
+									</p>
+								</div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_2.png" alt="">
+									<p>
+										유럽유기농인
+									</p>
+								</div>
+							</div>
+							<div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_3.png" alt="">
+									<p>한국유기농인</p>
+								</div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_4.png" alt="">
+									<p>한국유기가공식품인증</p>
+								</div>
+							</div>
+							<div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_5.png" alt="">
+									<p>식품안전관리인증</p>
+								</div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_6.png" alt="">
+									<p>식품안전경영시스템</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="sec4">
+					<div class="sec4_box1">
+						<div class="sec4_box1_text">
+							<h1>
+								색이 좋은 서광 차밭
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_soil.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_fog.png" width="100px" alt="">
+								</div>
+								
+							</h1>
+							<p>산방산 근처의 서광 차밭은 대기가 한라산을 지나며 많은 구름과 안개를<br>
+								형성하고, 이는 자연 차광 효과를 내 찻잎의 색을 좋게 만듭니다. 온화한<br>
+								기후와 자연 차광 효과는 고급 품질의 차를 만들 때 더없이 좋은 생육<br>
+								조건이 됩니다.
+							</p>
+							<button>주요 생산 제품</button>
+							<div class="sec4_loca"> 
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
+								제주특별자치도 서귀포시 안덕면 신화역사로 36
+							</div>
+						</div>	
+					</div>
+					
+
+					<div class="sec4_box2">
+						<div class="sec4_box2_text">
+							<h1>
+								향이 좋은 돌송이 차
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_light.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_water.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_wind.png" width="100px" alt="">
+								</div>
+								
+							</h1>
+							<p>돌송이 차밭 지역은 예로부터 화산재가 굳어서 돌멩이같이 잘게 부서진
+								<br>
+								화산송이가 많아 ‘돌송이’라고 불리어 왔습니다. 이곳은 산과 바다를
+								<br>
+								동시에 접하고 있어 매년 4월 한라산의 잔설을 품은 산바람과 바다의
+								<br>
+								수분을 머금은 바닷바람이 밤낮으로 불어와 돌송이 차밭에서 채엽한
+								<br>
+								차는 향이 매우 좋습니다.
+							</p>
+							<button>주요 생산 제품</button>
+							<div class="sec4_loca"> 
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
+								제주특별자치도 서귀포시 중산간서로356번길 152-41
+							</div>
+						</div>
+					</div>
+					<div class="sec4_box3">
+						<div class="sec4_box3_text">
+							<h1>
+								맛이 좋은 한남 차밭
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_soil.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_water.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_wind.png" width="100px" alt="">
+								</div>
+								
+							</h1>
+							<p>과거 ‘해들이밭’이라 하여 마을에서 가장 먼저 해가 드는 곳이라 불렸던
+								<br>
+								한남 차밭은 온화한 기후에서 성장해 차나무가 어리고 아미노산 함량이
+								<br>
+								높아 뛰어난 맛을 선사합니다.
+							</p>
+							<button>주요 생산 제품</button>
+							<div class="sec4_loca"> 
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
+								제주특별자치도 서귀포시 중산간서로356번길 152-41
+							</div>
+						</div>
+					</div>
+
+
+
+				</section>
 				<section id="sec5">5</section>
 				<section id="sec6">6</section>
 				<section id="sec7">7</section>
@@ -1391,6 +1850,28 @@ min-width: 420px;
 							clickable: true,
 						},
 					});
+					
+
+					$(function(){
+						$("#sec3_modal").hide();
+						$(".modal-backdrop").hide();
+						$(".sec3_title button").click(function(){
+
+							$("#sec3_modal").show();
+							$(".modal-backdrop").show();
+        				$("body").css("overflow", "hidden"); // 스크롤 비활성화
+        			});
+
+
+						$(".close, .modal-backdrop").click(function(){
+							$("#sec3_modal").hide();
+							$(".modal-backdrop").hide();
+       						 $("body").css("overflow", "auto"); // 스크롤 활성화
+       						});
+					});
+
+
+
 
 
 
