@@ -102,10 +102,10 @@
 		position: relative;
 /*		border: 3px solid orange;*/
 
-	}
-	#sec2, #sec3, #sec4, #sec5 {
-		background-color: white;
-	}
+}
+#sec2, #sec3, #sec4, #sec5 {
+	background-color: white;
+}
 
 
 
@@ -799,6 +799,7 @@ min-width: 300px;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 9998; /* 모달 바로 뒤에 위치하도록 z-index 설정 */
 	display: none;
+	opacity: 0.7;
 }
 
 
@@ -810,10 +811,10 @@ min-width: 300px;
 }
 .sec4_box1, .sec4_box2, .sec4_box3{
 /*	border: 1px solid blue;*/
-	width: 100%;
-	height: 33.3333%;
-	display: flex;
-	justify-content: center;
+width: 100%;
+height: 33.3333%;
+display: flex;
+justify-content: center;
 }
 
 .sec4_box1{
@@ -860,11 +861,10 @@ font-size: 32px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
 
-.sec4_box1_text .sec4_loca{
-	text-align: center;
-	position: relative;
-	top: 400px;
+.sec4_box1_text .sec4_loca, .sec4_box2_text .sec4_loca, .sec4_box3_text .sec4_loca{
+	display: flex;
 	color: white;
+	margin-top: 30px;
 	font-weight: 500;
 	font-family: 'Gowun Dodum', sans-serif;
 }
@@ -915,14 +915,6 @@ font-size: 32px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
 
-.sec4_box2_text .sec4_loca{
-	text-align: center;
-	position: relative;
-	top: 350px;
-	color: white;
-	font-weight: 500;
-	font-family: 'Gowun Dodum', sans-serif;
-}
 
 
 .sec4_box3{
@@ -968,17 +960,73 @@ font-size: 32px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
 
-.sec4_box3_text .sec4_loca{
-	text-align: center;
-	position: relative;
-	top: 400px;
-	color: white;
-	font-weight: 500;
-	font-family: 'Gowun Dodum', sans-serif;
+/*섹션4 모달쓰=================================================*/
+.sec4_box1_modal, .sec4_box2_modal, .sec4_box3_modal{
+	width: 350px;
+	height: 415px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease-out;
+	border-radius: 10px;
+	background-color: #AEAFB5;
+	z-index: 9999;
 }
 
+.sec4_box_modal_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sec4_box_modal_title p{
+	color: black;
+	font-size: 18px;
+	position: relative;
+	left: 20px;
+}
 
+.sec4_box_modal_title button{
+	position: relative;
+	left: 100px;
+	background-color: #AEAFB5;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.sec4_box_modal_body{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+.sec4_box_modal_body img{
+	width: 268px;
+}
 
+.sec4_box3_modal{
+	width: 884px;
+	height: 414px;
+}
+.sec4_box_modal_bigbody{
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width:880px){
+.sec4_box3_modal_3{
+	width: 330px;
+	height: 248px;
+
+}
+
+.sec4_box3_modal_3 .sec4_box_modal_body img{
+	width: 110px;
+}
+
+}
 
 /*==========================미디어 쿼리======================*/
 @media screen and (max-width: 1280px){
@@ -1553,7 +1601,19 @@ min-width: 200px;
 								제주특별자치도 서귀포시 안덕면 신화역사로 36
 							</div>
 						</div>	
+						<div class="modal-backdrop"></div>
+						<div class="sec4_box1_modal">
+							<div class="sec4_box_modal_title">
+								<p>주요 생산제품</p>
+								<button class="close"><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt=""></button>
+							</div>
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_1.png" alt="">
+								<p>프리미엄 말차</p>
+							</div>
+						</div>
 					</div>
+
 					
 
 					<div class="sec4_box2">
@@ -1583,6 +1643,17 @@ min-width: 200px;
 								제주특별자치도 서귀포시 중산간서로356번길 152-41
 							</div>
 						</div>
+						<div class="modal-backdrop"></div>
+						<div class="sec4_box2_modal">
+							<div class="sec4_box_modal_title">
+								<p>주요 생산제품</p>
+								<button class="close"><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt=""></button>
+							</div>
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_2.png" alt="">
+								<p>일로향</p>
+							</div>
+						</div>
 					</div>
 					<div class="sec4_box3">
 						<div class="sec4_box3_text">
@@ -1605,6 +1676,27 @@ min-width: 200px;
 							<div class="sec4_loca"> 
 								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
 								제주특별자치도 서귀포시 중산간서로356번길 152-41
+							</div>
+						</div>
+						<div class="modal-backdrop"></div>
+						<div class="sec4_box3_modal sec4_box3_modal_3">
+							<div class="sec4_box_modal_title">
+								<p>주요 생산제품</p>
+								<button class="close"><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt=""></button>
+							</div>
+							<div class="sec4_box_modal_bigbody">
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_3.png" alt="">
+								<p>홍우전</p>
+							</div>
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_4.png" alt="">
+								<p>제주화산암차</p>
+							</div>
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_5.png" alt="">
+								<p>청우롱</p>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -1850,7 +1942,7 @@ min-width: 200px;
 							clickable: true,
 						},
 					});
-					
+			// ==========================섹션 3 모달======================					
 
 					$(function(){
 						$("#sec3_modal").hide();
@@ -1871,7 +1963,50 @@ min-width: 200px;
 					});
 
 
+					// =====================섹션 4 모달스======================
 
+					$(function(){
+						let s4_modal01 = $(".sec4_box1_modal");
+						let s4_modal02 = $(".sec4_box2_modal");
+						let s4_modal03 = $(".sec4_box3_modal");
+						let s4_modalbtn01 = $(".sec4_box1_text button");
+						let s4_modalbtn02 = $(".sec4_box2_text button");
+						let s4_modalbtn03 = $(".sec4_box3_text button");
+
+
+						s4_modal01.hide();
+						s4_modal02.hide();
+						s4_modal03.hide();
+						$(".modal-backdrop").hide();
+						
+						s4_modalbtn01.click(function(){
+							s4_modal01.show();
+							$(".modal-backdrop").show();
+        				$("body").css("overflow", "hidden"); // 스크롤 비활성화
+        			});
+						s4_modalbtn02.click(function(){
+							s4_modal02.show();
+							$(".modal-backdrop").show();
+        				$("body").css("overflow", "hidden"); // 스크롤 비활성화
+        			});
+						s4_modalbtn03.click(function(){
+							s4_modal03.show();
+							$(".modal-backdrop").show();
+        				$("body").css("overflow", "hidden"); // 스크롤 비활성화
+        			});
+						
+
+
+
+
+						$(".close, .modal-backdrop").click(function(){
+							s4_modal01.hide();
+							s4_modal02.hide();
+							s4_modal03.hide();
+							$(".modal-backdrop").hide();
+       						 $("body").css("overflow", "auto"); // 스크롤 활성화
+       						});
+					});
 
 
 
