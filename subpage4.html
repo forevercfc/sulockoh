@@ -10,7 +10,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>subpage4</title>
+	<title>수정설록_다다일상</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -580,18 +580,158 @@ align-items: center;
 	margin-bottom: 100px;
 }
 
+#sec4{
+	height: 460px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+#sec4 h1{
+/*	border: 1px solid red;*/
+font-size: 32px;
+font-family: 'Gowun Dodum', sans-serif;
+color: #666666;
+font-weight: 500;
+margin-bottom: 30px;
+white-space: nowrap;
+}
+#sec4 .sec4_body{
+	width: 1240px;
+/*	 border: 1px solid red;*/
+display: flex;
+height: 235px;	
+justify-content: center;
+}
+#sec4 .sec4_box{
+/*	border: 1px solid red;*/
+width: 50%;	
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: flex-start;
+padding-left: 50px;
+} 
+#sec4 .sec4_box>h2{
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #666666;
+	font-weight: 500;
+	white-space: nowrap;
+}
+#sec4 .sec4_box>h3{
+	font-weight:500;
+}
+
+.sec4_bg1{
+	background: url(https://image.osulloc.com/kr/ko/static_cdj/images/dada_renew/main_light_pc.png) no-repeat;
+	background-size: cover;
+}
+
+.sec4_bg2{
+	background: url(https://image.osulloc.com/kr/ko/static_cdj/images/dada_renew/main_deli_pc.png) no-repeat;
+	background-size: cover;
+}
+
+#sec5{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#sec5 h1{
+	font-size: 32px;
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #666666;
+	font-weight: 500;
+	margin: 50px 0;
+	white-space: nowrap;
+	text-align: center;
+}
 
 
+table {
+	border-collapse: collapse; /* 테두리 겹치기 */
+	width: 80%; /* 테이블의 전체 너비 */
+	height: 80%;
+	text-align: center;
+}
+
+
+td {
+	border: 1px solid #ddd; /* 셀 테두리 */
+	height: 50px; /* 셀 높이 */
+	color: #999999;
+}
+
+.green_tr td{
+	background-color: #f6f8f6;
+	color: #5a7e62;
+	font-size: 22px;
+	height: 62px;
+}
+
+tr td:first-child{
+	font-weight: bold;
+	color: black;
+	font-size: 22px;
+}
+
+#sec6{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+#sec6 h1{
+	font-size: 32px;
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #333333;
+	font-weight: 500;
+	margin: 50px 0;
+	text-align: center;
+}
+.sec6_body{
+	background-color:#fbfbfb;
+	width: 95%;
+/*	border: 1px solid red;*/
+	display: flex;
+	justify-content: center;
+}
+
+.sec6_txt1{
+	font-size: 22px;
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #333333;
+	font-weight: bold;
+	margin-top: 50px;
+}
+.sec6_txt2{
+	font-size: 18px;
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #999;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+#sec6 ul{
+/*	border: 1px solid red;*/
+	width: 100%;
+}
 
 /*==========================================================
 ==========================미디어 쿼리======================
 ==========================================================*/
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1250px){
 	.left_box ul, #login{
 		display: none;
 	}
+
 	.sec1_bg{
 		background: url(https://image.osulloc.com/kr/ko/static_cdj/images/dada_renew/main_banner_mo.png)no-repeat;
 		background-position: top center;
@@ -713,8 +853,24 @@ align-items: center;
 		width: 100%;
 		height: auto;
 	}
+	
+
+
+	#sec4 .sec4_body{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 380px;		
+	}
+	#sec4 .sec4_box{
+		width: 100%;	
+		height: 50%;	
+	}
+
 
 }
+
+
 
 
 
@@ -729,6 +885,37 @@ align-items: center;
 		font-size: 14px;
 	}
 	
+	#sec4 h1{
+		font-size: 6vw;
+		margin: 0 10px;
+	}
+	#sec4 .sec4_box>h2{
+		font-size: 18px;
+	}
+	#sec4 .sec4_box>h3{
+		font-size: 15px;
+	}
+
+	#sec5 h1, #sec6 h1{
+		font-size: 5vw;
+	}
+
+
+	table {	
+		width: 95%; /* 테이블의 전체 너비 */
+	}
+
+	.green_tr td, tr td:first-child, td{
+		font-size: 4vw;
+	}
+	.sec6_txt1{
+		font-size: 18px;
+	}
+	.sec6_txt2{
+		font-size: 15px;
+	}
+
+
 	
 
 }
@@ -904,164 +1091,285 @@ align-items: center;
 							</div>
 						</div>
 					</section>
-					<section id="sec4"></section>
-					<section id="sec5"></section>
-					<section id="sec6"></section>
-
-
-
-
-
-
-
-
-					<section id="footer">
-						<div class="footer_tgBox">
-							<div>오설록 사업자 정보확인</div>
-							<button id="toggleFooter">>Click!<</button>
-						</div>
-						<div class="mini_footer">					
-							<div class="hide_footer_txt">
-								<p>㈜ 오설록<br>
-									대표이사 : 서혁제<br>
-									주소 : 서울 특별시 용산구 한강대로 100 (한강로2가)<br>
-									사업자 등록번호 : 390-87-01499<br>
-									통신판매업신고번호 : 2019-서울용산-1173호<br>
-									호스팅제공자 : ㈜오설록<br>
-									<br>
-									(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 <br>
-									통신판매중개자 이며 통신판매의 당사자가 아닙니다.<br>
-									따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.<br>
-									<br>
-									NHN KCP 구매안전(에스크로)서비스<br>
-									고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한<br> 
-								NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
+					<section id="sec4">
+						<h1>조금 더 가벼운 티라이프도 만나보세요.</h1>
+						<div class="sec4_body">
+							<div class="sec4_box sec4_bg1">
+								<h2>다다일상 라이트</h2>
+								<h3>매월 다양한 차들을 가볍게 만나요</h3>
+								<p>자세히보기 ></p>
 							</div>
-							<hr>
-							<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>									
-						</div>
-
-						<div class="footer_login">
-							<div class="footer_login_box">
-								<p>로그인</p>
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="">
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="">
-								<img src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="">
+							<div class="sec4_box sec4_bg2">
+								<h2>정기배송</h2>
+								<h3>매월 내가 원하는 차를 편하게 만나요</h3>
+								<p>자세히보기 ></p>
 							</div>
 						</div>
-						<div class="footer_top">
-							<div class="footer_top_info">
-								<div class="footer_top_info_left">
-									<p class="footer_top_info_left_title">고객상담센터 · 주문/배송문의</p>
-									<p class="footer_top_info_left_email">help@osulloc.com</p>
-									<p class="footer_top_info_left_tell">080-805-5555</p>
-									<p class="footer_top_info_left_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
-								</div>
-								<div class="footer_top_info_right">
-									<p class="footer_top_info_right_title">특판, 대량구매 문의</p>
-									<p class="footer_top_info_right_email">mall@osulloc.com</p>
-									<p class="footer_top_info_right_kakao">카카오톡ID : osullocmall</p>
-									<p class="footer_top_info_right_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
-								</div>
-							</div>
-							<div class="footer_top_icon">
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="">
-									매장안내
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="">
-									멤버십혜택
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="">
-									단체 및<br>기업구매
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="">
-									1:1문의
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="">
-									뷰티포인트 <br>추후적립
-								</div>
-							</div>
-						</div>
-						<div class="footer_btm">
-							<a href="index.html">
-								<img class="footer_btm_img1" src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" alt="">
-							</a>
-							<div>
-								<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>
-								<p class="footer_btmtxt2">㈜ 오설록<br>
-									대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 <br> 통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록</p>
-									<p class="footer_btmtxt3">주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>
-								</div>
-								<img class="footer_btm_img2" src="img/footerLogo.png" alt="">
+					</section>
+					<section id="sec5">
+						<h1>다다일상 | 다다일상 라이트 | 정기배송 안내</h1>
+						<table>
+							<tbody>
+								<tr class="green_tr">
+									<td></td>
+									<td>다다일상</td>
+									<td>다다일상 라이</td>
+									<td>정기배송</td>
+								</tr>
+								<tr>
+									<td>매월구성</td>
+									<td>*매월 다른 구성* <br>
+										큐레이션 티 + 이달의 티레터<br>
+									티 테이블 기프트</td>
+									<td>*매월 다른 구성*<br>
+									티 2종 + 모먼트 카드</td>
+									<td>내가 원하는 차<br>
+									매월 정기배송</td>
+								</tr>
+								<tr>
+									<td>무료배송</td>
+									<td>O</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>챌린지 참여</td>
+									<td>O</td>
+									<td>X</td>
+									<td>X</td>
+								</tr>
+								<tr>
+									<td>가격안내</td>
+									<td>1개월 24,900원/월<br>
+										3개월 22,900원/월<br>
+									6개월 19,900원/월</td>
+									<td>매월 13,900원</td>
+									<td>상시 15% 할인</td>
+								</tr>
+								<tr>
+									<td>결재방법</td>
+									<td>매월 자동 결제<br>
+									3개월/6개월 구독 시, 묶음 결제</td>
+									<td>매월 자동 결제</td>
+									<td>매월 자동 결제</td>
+								</tr>								
+							</tbody>
+						</table>
+					</section>
+					<section id="sec6">
+						<h1>구독 서비스 이용 시
+						아래 안내사항을 꼭 확인해주세요</h1>
+						<div class="sec6_body">
+							<ul>
+								<li>
+									<p class="sec6_txt1">자동결제</p>
+									<p class="sec6_txt2">매월 1일 ~ 28일 중 고객님이 첫 구독 결제하신 일로 최초 자동 결제일이 지정됩니다.</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">결제일 변경</p>
+									<p class="sec6_txt2">기존 결제일 기준 2일 전까지 자유롭게 변경 가능합니다.
 
+									</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">배송지 변경</p>
+									<p class="sec6_txt2">기존 결제일 기준 2일 전까지 자유롭게 변경 가능하며, 구독 서비스 배송지 변경은 기본 배송지와 변경 방법이 상이합니다.<br>
+									구독 서비스 배송지 변경은 맨 아래의 ‘각종 변경 및 취소, 해지 경로 안내’를 참고해주세요.</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">건너뛰기 정기배송일 변경</p>
+									<p class="sec6_txt2">이번 달 건너뛰기 및 결제일을 다음달로 변경하신 경우, 이번 달 구성은 배송되지 않고 다음 달 구성으로 배송됩니다.</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">주문 취소</p>
+									<p class="sec6_txt2">주문 취소는 [결제 완료] 단계에서만 가능하며 즉시 처리됩니다.<br>
+										주문 취소는 구독 해지가 아닙니다. 결제 완료 - 출고 이전에 한 해 당월 주문 건만 취소 됨을 참고 부탁드립니다.<br>
+										매월 결제 상품은 당월 분 주문 취소 후 환불은 결제 대행사를 통해 진행되며, 영업일 기준 1~7일까지 소요될 수 있습니다.<br>
+									3개월/6개월 일괄 결제 상품은 주문 취소 시 ‘환불’이 아닌 해당 월 구독 이용 횟수가 이월됩니다.</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">반품</p>
+									<p class="sec6_txt2">제품이 이미 발송 완료된 경우, 반품은 불가능하며 제품에 하자가 있는 경우에만 고객 상담실로 연락 부탁드립니다.</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">구독 취소(구독 해지)</p>
+									<p class="sec6_txt2">구독 취소를 원할 경우 ‘해지 하기’로 진행 가능하며 해당월 다다일상을 수령하신 경우 구매확정 후 해지 가능합니다.<br>
+										3개월/6개월 묶음 결제 상품의 경우 하기와 같이 환불 금액이 책정됩니다.<br>
+										* 3개월 구독 상품 해지 : 총 결제 금액 - (24,900원*지금까지 구독한 개월 수)<br>
+									* 6개월 구독 상품 해지 : 총 결제 금액 - (24,900원*지금까지 구독한 개월 수) - 다이어리 비용 5,000원</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">자동 결제 승인 실패로 인한 해지 안내</p>
+									<p class="sec6_txt2">구독 중, 자동 결제 실패 시 2회까지 고객에게 안내되며 이후에도 결제 승인이 이루어지지 않으면 구독이 해지됩니다.</p>
+								</li>
+								<li>
+									<p class="sec6_txt1">각종 변경 및 취소, 해지 경로 안내</p>
+									<p class="sec6_txt2">* PC 버전 : 마이 페이지 > 다다일상 관리 > 변경할 구독 서비스 클릭 > 구독 관리 페이지 내 관련 버튼 클릭<br>
+										* 모바일 버전 : 우측상단 바 메뉴 > 변경할 구독 서비스 클릭 > 구독 관리 페이지 내 관련 버튼 클릭</p>
+									</li>
+									<li>
+										<p class="sec6_txt1">기타 유의사항</p>
+										<p class="sec6_txt2">매월 구성되는 상품은 1개의 세트입니다. 구성품 일부를 다른 상품으로 교체 불가합니다.<br>
+										각 상품별 유통기한이 상이합니다. 상품 뒷면에 표기된 유통기한을 확인 해주세요.</p>
+									</li>
+								</ul>
 							</div>
-
 						</section>
-					</div>
-					<script>
+
+
+
+
+
+
+
+
+						<section id="footer">
+							<div class="footer_tgBox">
+								<div>오설록 사업자 정보확인</div>
+								<button id="toggleFooter">>Click!<</button>
+							</div>
+							<div class="mini_footer">					
+								<div class="hide_footer_txt">
+									<p>㈜ 오설록<br>
+										대표이사 : 서혁제<br>
+										주소 : 서울 특별시 용산구 한강대로 100 (한강로2가)<br>
+										사업자 등록번호 : 390-87-01499<br>
+										통신판매업신고번호 : 2019-서울용산-1173호<br>
+										호스팅제공자 : ㈜오설록<br>
+										<br>
+										(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 <br>
+										통신판매중개자 이며 통신판매의 당사자가 아닙니다.<br>
+										따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.<br>
+										<br>
+										NHN KCP 구매안전(에스크로)서비스<br>
+										고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한<br> 
+									NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
+								</div>
+								<hr>
+								<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>									
+							</div>
+
+							<div class="footer_login">
+								<div class="footer_login_box">
+									<p>로그인</p>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="">
+								</div>
+							</div>
+							<div class="footer_top">
+								<div class="footer_top_info">
+									<div class="footer_top_info_left">
+										<p class="footer_top_info_left_title">고객상담센터 · 주문/배송문의</p>
+										<p class="footer_top_info_left_email">help@osulloc.com</p>
+										<p class="footer_top_info_left_tell">080-805-5555</p>
+										<p class="footer_top_info_left_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+									</div>
+									<div class="footer_top_info_right">
+										<p class="footer_top_info_right_title">특판, 대량구매 문의</p>
+										<p class="footer_top_info_right_email">mall@osulloc.com</p>
+										<p class="footer_top_info_right_kakao">카카오톡ID : osullocmall</p>
+										<p class="footer_top_info_right_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+									</div>
+								</div>
+								<div class="footer_top_icon">
+									<div>
+										<img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="">
+										매장안내
+									</div>
+									<div>
+										<img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="">
+										멤버십혜택
+									</div>
+									<div>
+										<img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="">
+										단체 및<br>기업구매
+									</div>
+									<div>
+										<img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="">
+										1:1문의
+									</div>
+									<div>
+										<img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="">
+										뷰티포인트 <br>추후적립
+									</div>
+								</div>
+							</div>
+							<div class="footer_btm">
+								<a href="index.html">
+									<img class="footer_btm_img1" src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" alt="">
+								</a>
+								<div>
+									<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>
+									<p class="footer_btmtxt2">㈜ 오설록<br>
+										대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 <br> 통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록</p>
+										<p class="footer_btmtxt3">주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>
+									</div>
+									<img class="footer_btm_img2" src="img/footerLogo.png" alt="">
+
+								</div>
+
+							</section>
+						</div>
+						<script>
 		// ================메인메뉴 스크립트====================
-						$(function () {
-							let Mainli = $("#Mainmenu");
-							let MainA = $("#Mainmenu a");
-							let MainLogo = $("#Mainmenu h1 a img");
-							let originalLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png";
-							let hoverLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png";
-							let hideMenu = $(".hideMenu");
-							let hideList =$(".hideMenu ul");
-							let left_menu = $(".left_box ul li a");
+							$(function () {
+								let Mainli = $("#Mainmenu");
+								let MainA = $("#Mainmenu a");
+								let MainLogo = $("#Mainmenu h1 a img");
+								let originalLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png";
+								let hoverLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png";
+								let hideMenu = $(".hideMenu");
+								let hideList =$(".hideMenu ul");
+								let left_menu = $(".left_box ul li a");
 
-							hideMenu.hide();
+								hideMenu.hide();
 
-							function showMainMenu() {
-								Mainli.css("background", "white");
-								MainA.css("color", "#333333");
-							}
+								function showMainMenu() {
+									Mainli.css("background", "white");
+									MainA.css("color", "#333333");
+								}
 
-							function hideMainMenu() {
-								Mainli.css("background", "white");
-								MainA.css("color", "#333333");
-							}
+								function hideMainMenu() {
+									Mainli.css("background", "white");
+									MainA.css("color", "#333333");
+								}
 
-							Mainli.hover(
-								function () {
-									showMainMenu();
-								},
-								function () {
+								Mainli.hover(
+									function () {
+										showMainMenu();
+									},
+									function () {
             // 마우스가 hideMenu를 벗어나면 Mainmenu가 숨겨져 있을 때만 hideMainMenu실행
-									if (!hideMenu.is(":visible")) {
-										hideMainMenu();
+										if (!hideMenu.is(":visible")) {
+											hideMainMenu();
+										}
 									}
-								}
-								);
-							$('.left_box ul li a').hover(
-								function() {
+									);
+								$('.left_box ul li a').hover(
+									function() {
         // 마우스가 요소 위에 있을 때
-									$(this).css("color", "green");
-								},
-								function() {
+										$(this).css("color", "green");
+									},
+									function() {
         // 마우스가 요소를 벗어났을 때
-									$(this).css("color", "white");
-								}
-								);
+										$(this).css("color", "white");
+									}
+									);
 
 
-							MainA.hover(
-								function () {
-									$(this).css("color", "green");
-								},
-								function () {
-									$(this).css("color", "#333333");
-								}
-								);
+								MainA.hover(
+									function () {
+										$(this).css("color", "green");
+									},
+									function () {
+										$(this).css("color", "#333333");
+									}
+									);
 
-							left_menu.eq(0).hover(
-								function () {
-									hideMenu.slideDown();
+								left_menu.eq(0).hover(
+									function () {
+										hideMenu.slideDown();
             showMainMenu(); // hideMenu가 나타날 때 Mainmenu도 hover 상태로 유지
         },
         function () {
@@ -1094,57 +1402,58 @@ align-items: center;
 
 
 
-						$(function(){
-							let burger_close_Btn = $("#smallMenu span");
-							let burgerMenuBtn = $(".burgerBtn");
-							let burgerMenu = $("#smallMenu");
-							let body = $("body");
+							$(function(){
+								let burger_close_Btn = $("#smallMenu span");
+								let burgerMenuBtn = $(".burgerBtn");
+								let burgerMenu = $("#smallMenu");
+								let body = $("body");
 
-							burgerMenu.hide();
+								burgerMenu.hide();
 
     // smallMenu 내부에서 스크롤이 가능하도록 설정
-							burgerMenu.css("overflow-y", "auto");
+								burgerMenu.css("overflow-y", "auto");
 
-							burgerMenuBtn.click(function(event){
-								event.stopPropagation(); 
-								burgerMenu.show();
+								burgerMenuBtn.click(function(event){
+									event.stopPropagation(); 
+									burgerMenu.show();
         body.css("overflow", "hidden"); // 배경 스크롤 비활성화
     });
 
-							burger_close_Btn.click(function(){
-								burgerMenu.hide();
+								burger_close_Btn.click(function(){
+									burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
 
-							$(document).click(function() {
-								burgerMenu.hide();
+								$(document).click(function() {
+									burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
-						});
-
-
-			//footer 영역 토글 구현
-						document.addEventListener('DOMContentLoaded', function() {
-							var toggleButton = document.getElementById('toggleFooter');
-							var miniFooter = document.querySelector('.mini_footer');
-
-							toggleButton.addEventListener('click', function() {
-						// 화면 너비가 1050px 이하일 때만 토글 기능이 작동합니다.
-								if (window.innerWidth <= 1050) {
-									miniFooter.style.display = miniFooter.style.display === 'block' ? 'none' : 'block';
-								}
 							});
 
-					// 화면 크기 변경에 따라 mini_footer의 표시 여부를 조정합니다.
-							window.addEventListener('resize', function() {
-								if (window.innerWidth > 1050) {
-									miniFooter.style.display = 'none';
-								} else {
-							// 화면이 1050px 이하로 변경될 때 기본적으로 숨깁니다.
-									miniFooter.style.display = 'none';
-								}
+
+
+				//footer 영역 토글 구현
+							document.addEventListener('DOMContentLoaded', function() {
+								var toggleButton = document.getElementById('toggleFooter');
+								var miniFooter = document.querySelector('.mini_footer');
+
+								toggleButton.addEventListener('click', function() {
+        // 화면 너비가 1050px 이하일 때만 토글 기능이 작동합니다.
+									if (window.innerWidth <= 1050) {
+										miniFooter.style.display = miniFooter.style.display === 'block' ? 'none' : 'block';
+									}
+								});
+
+    // 화면 크기 변경에 따라 mini_footer의 표시 여부를 조정합니다.
+								window.addEventListener('resize', function() {
+									if (window.innerWidth > 1050) {
+										miniFooter.style.display = 'none';
+									} else {
+            // 화면이 1050px 이하로 변경될 때 기본적으로 숨깁니다.
+										miniFooter.style.display = 'none';
+									}
+								});
 							});
-						});
-					</script>
-				</body>
-				</html>
+						</script>
+					</body>
+					</html>
