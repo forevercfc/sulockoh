@@ -618,6 +618,11 @@ grid-gap: 10px;
 	font-size: 18px;
 }
 
+.sec3_hideitem_main{
+	display: none;
+}
+
+
 
 /*==========================================================
 ==========================미디어 쿼리======================
@@ -740,37 +745,60 @@ grid-gap: 10px;
 	font-size: 15px;
 }
 #sec3 .sec3_body{
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 두 컬럼으로 나눕니다 */
+	gap: 10px; /* 컬럼 사이의 간격을 조절합니다 */
 	width: 90%
 }
 .sec3_item_main{
-	width: 100%;
+	display: none;
 }
 .sec3_item{
-	width: 50%;
-}
-.sec3_item_main img, .sec3_item img{
 	width: 100%;
 }
-.sec3_item_main div{
+.sec3_item img{
+	width: 100%;
+}
+
+.sec3_hideitem_main{
+	display: block;
+	width: 100%;
+}
+.sec3_hideitem_main img{
+	width: 100%;
+}
+.sec3_hideitem_main div{
+	position: relative;
+	top: -80px;
+	margin-left: 20px;
+}
+
+/*.sec3_hideitem_main .sec3_item_name, .sec3_hideitem_main .sec3_item_price{
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+}*/
+
+/*.sec3_item_main div{
 	position: relative;
 	top: -80px;
 	margin-left: 20px;
 
-}
-.sec3_item_main .sec3_item_name, .sec3_item_main .sec3_item_price{
+}*/
+/*.sec3_item_main .sec3_item_name, .sec3_item_main .sec3_item_price{
 	font-size: 22px;
 	color: white;
 	font-weight: bold;
-}
-.sec3_item .sec3_item_name{
+}*/
+.sec3_item .sec3_item_name, .sec3_hideitem_main .sec3_item_name{
 	font-size: 16px;
 	color: #727272;
 }
-.sec3_item .sec3_item_price{
+.sec3_item .sec3_item_price, .sec3_hideitem_main .sec3_item_price{
 	font-size: 18px;
 }
+
+
 
 
 }
@@ -951,6 +979,14 @@ grid-gap: 10px;
 			<h1>베스트</h1>
 			<p>오설록에서 많이 선물된 선물세트를 모았어요.</p>
 		</div>
+		<div class="sec3_hideitem_main">
+			<a href="#"><img src="https://image.osulloc.com/upload/kr/ko/adminImage/NN/TE/304_20231220145750325AZ_mo_large.png" alt="">
+				<div>
+					<p class="sec3_item_name">프리미엄 티 컬렉션</p>
+					<p class="sec3_item_price">28,000원</p>
+				</div>
+			</a>
+		</div>
 		<div class="sec3_body">
 
 			<div class="sec3_item_main">
@@ -961,6 +997,8 @@ grid-gap: 10px;
 					</div>
 				</a>
 			</div>
+			
+
 			<div class="sec3_item">
 				<a href="#"><img src="https://image.osulloc.com/upload/kr/ko/adminImage/HB/XA/304_20211026141423508CU.png" alt="">
 					<div>
@@ -1021,6 +1059,8 @@ grid-gap: 10px;
 			</div>
 
 		</div>
+
+
 	</section>
 	<section id="sec4"></section>
 
