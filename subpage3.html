@@ -101,7 +101,7 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
-		/* border: 3px solid orange; */
+/*		border: 3px solid orange;*/
 
 	}
 	#sec2, #sec3, #sec4, #sec5 {
@@ -222,7 +222,9 @@ background-color: white;
 	cursor: pointer;
 
 }
-
+.hideMenu ul li:nth-child(1){
+/*	font-weight: bold;*/
+}
 .hideMenu ul li:hover{
 	color: green;
 }
@@ -280,7 +282,7 @@ background-color: white;
 	height: 450px;  
 /*	margin-top: 150px;*/
 /*	margin-bottom: 500px;*/
-background-color: white;
+	background-color: white;
 }
 
 #footer .footer_login{
@@ -415,7 +417,7 @@ align-items: center;
 	font-size: 12px;
 	font-weight: bold;
 }
-#footer .footer_btm_img2{
+#sec9 .footer_btm_img2{
 	width: 300px;
 	height: 110px;
 	position: relative;
@@ -1163,7 +1165,7 @@ align-items: center;
 	font-family: 'Gowun Dodum', sans-serif;
 	color: white;
 	font-weight: 500;
-	margin: 0 20px 50px 20px; 
+	margin-bottom: 50px;
 }
 
 #sec6 .swiper {
@@ -1256,184 +1258,9 @@ align-items: center;
 	margin-bottom: 5%;
 }
 
-#sec8, #sec9{
-	background-color: white;
-}
-
-
-
 #sec8{
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.sec8_title{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.sec8_title h1{
-	font-size: 44px;
-	font-family: 'Gowun Dodum', sans-serif;
-	color: #666666;
-	font-weight: 500;
-	margin-top: 100px;
-	margin-bottom: 50px;
-}
-.sec8_title p{
-	font-size: 18px;
-	font-family: 'Gowun Dodum', sans-serif;
-	color: #666666;
-	font-weight: 500;
-	margin-bottom: 100px;
-}
-.sec8_body{
-	width: 80%;
-	height: auto;
-/*	border: 1px solid red;*/
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-.sec8_box{
-/*	border: 1px solid black;*/
-width: 100%;
-height: 30%;
-display: flex;	
-justify-content: space-evenly;
-margin-bottom: 30px;
-}
-.sec8_doublebox{
-	width: 30%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-.sec8_singlebox{
-	width: 30%;
-	position: relative;
-}
-.sec8_singlebox_txtbox{
-	position: absolute;
-	bottom: 0;
-	padding: 40px 55px;
-	text-align: left;
-}
-.sec8_singlebox_txtbox_top{
-	position: absolute;
-	top: 0;
-	padding: 40px 55px;
-	text-align: left;
-}
-
-
-.sec8_doublebox img, .sec8_singlebox img{
-	width: 100%;
-	height: 100%;
-}
-
-.sec8_singlebox_txt1{
-	font-size: 18px;
-	font-family: 'Gowun Dodum', sans-serif;
-	color:white;
-	font-weight: 500;
-	margin-bottom: 30px;
-}
-.sec8_singlebox_txt2{
-	font-size: 14px;
-	font-family: 'Gowun Dodum', sans-serif;
-	color:white;
-	font-weight: 500;
-}
-
-@media screen and (max-width: 800px){
-	.sec8_doublebox{
-		display: none;
-	}
-	.sec8_singlebox{
-		width: 100%;
-	}
-	.sec8_body{
-		width: 100%;
-	}
-	.sec8_box{
-		flex-direction: column;
-		margin-bottom: 0;
-	}
-
-	.sec5_title h1, .sec7_title h1, .sec8_title h1{
-		font-size: 26px;
-	}
-	.sec7_title p, .sec8_title p{
-		font-size: 15px;
-		margin:  20px;
-	}
-	
-	
-}
-
-#sec9{
-	height: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}	
-.sec9_title h1{
-	font-size: 36px;
-	font-family: 'Gowun Dodum', sans-serif;
-	color: #666666;
-	font-weight: 500;
-	margin-bottom: 50px;
-}
-
-.sec9_body{
-	display: flex;
-	width: 70%;
-	justify-content: center;	
-	align-items: center;
-}
-.sec9_body>div{
-	margin: 0 30px;
-	border: 1px solid #666666;
-	width: 240px;
-	min-width: 240px;
-	height: 60px;
-}
-.sec9_body a{
-	font-family: 'Gowun Dodum', sans-serif;
-	font-size: 18px;
-	color: #666666;
-	font-weight: bold;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	line-height: 60px;
-	transition: background-color 0.5s ease ;
 	background-color: white;
 }
-.sec9_body a:hover{
-	background-color: #444;
-	color: white;
-}
-@media screen and (max-width: 800px){
-	.sec9_title h1{
-		font-size: 24px;
-		text-align: center;
-		margin: 0 20px 50px 20px;
-	}
-}
-
-
-
-
 
 /*==========================미디어 쿼리======================*/
 @media screen and (max-width: 1280px){
@@ -1479,7 +1306,7 @@ margin-bottom: 30px;
 		border: none;
 		background-color: white;
 		font-size: 1em;
-		cursor: pointer;/
+		cursor: pointer;
 	}
 
 	#footer .footer_login,
@@ -1552,30 +1379,13 @@ margin-bottom: 30px;
 	}
 
 	#sec7 .swiper-slide {
-		width: 70%;
-		margin: 0 20px;
-	}
-
-	.sec9_body{
-		flex-direction: column;
-	}
-	.sec9_body div{
-		margin-bottom: 20px;
-	}
-
-	.sec8_singlebox_txt1{
-		font-size: 16px;
-	}
-	.sec8_singlebox_txt2{
-		font-size: 13px;
-	}
-	.sec8_singlebox_txtbox{
-		padding: 10px 8px;
-	}
-
+	width: 70%;
+	margin: 0 20px;
 }
 
 
+
+}
 
 
 @media screen and (max-width: 500px){
@@ -1679,7 +1489,7 @@ min-width: 200px;
 				</h1>
 				<ul>
 					<li><a href="subpage1.html">제품</a></li>
-					<li><a href="#">선물추천</a></li>
+					<li><a href="subpage5.html">선물추천</a></li>
 					<li><a href="subpage4.html">다다일상</a></li>
 					<li><a href="subpage3.html">브랜드</a></li>
 				</ul>
@@ -1766,6 +1576,8 @@ min-width: 200px;
 							<a href="subpage4.html"><li>다다일상</li></a>
 							<hr>
 							<a href="subpage3.html"><li>브랜드</li></a>
+							<hr>	
+							<a href="subpage5.html"><li>선물추천</li></a>
 						</ul>
 					</div>
 					<img src="https://image.osulloc.com/upload/kr/ko/adminImage/CG/WL/20231130172838557BP.jpg"alt="">
@@ -2325,264 +2137,164 @@ min-width: 200px;
 
 				
 			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 	</section>
+	
+	
 
-	<section id="sec8">
-		<div class="sec8_title">
-			<h1>다다일상, <br>
-			차와 함께하는 삶</h1>
-			<p>차를 마시는 것은 일상의 쉼을 가지며, 나를 이끌어내고 세상을 따뜻하게 바라보는 것에 관한 일입니다. <br>
-			당신이 언제 어디에 있든 차와 함께 삶의 아름다운 여백을 만들어 나가길 바랍니다.</p>
+
+
+
+	<section id="footer">
+		<div class="footer_tgBox">
+			<div>오설록 사업자 정보확인</div>
+			<button id="toggleFooter">>Click!<</button>
+		</div>
+		<div class="mini_footer">					
+			<div class="hide_footer_txt">
+				<p>㈜ 오설록<br>
+					대표이사 : 서혁제<br>
+					주소 : 서울 특별시 용산구 한강대로 100 (한강로2가)<br>
+					사업자 등록번호 : 390-87-01499<br>
+					통신판매업신고번호 : 2019-서울용산-1173호<br>
+					호스팅제공자 : ㈜오설록<br>
+					<br>
+					(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 <br>
+					통신판매중개자 이며 통신판매의 당사자가 아닙니다.<br>
+					따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.<br>
+					<br>
+					NHN KCP 구매안전(에스크로)서비스<br>
+					고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한<br> 
+				NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
+			</div>
+			<hr>
+			<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>									
 		</div>
 
-		<div class="sec8_body">
-			<div class="sec8_box">
-				
-				<div class="sec8_doublebox">
-					<div>
-						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_1.jpg" alt="">
-					</div>
-					<div>
-						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_2.jpg" alt="">
-					</div>
+		<div class="footer_login">
+			<div class="footer_login_box">
+				<p>로그인</p>
+				<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="">
+				<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="">
+				<img src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="">
+			</div>
+		</div>
+		<div class="footer_top">
+			<div class="footer_top_info">
+				<div class="footer_top_info_left">
+					<p class="footer_top_info_left_title">고객상담센터 · 주문/배송문의</p>
+					<p class="footer_top_info_left_email">help@osulloc.com</p>
+					<p class="footer_top_info_left_tell">080-805-5555</p>
+					<p class="footer_top_info_left_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
 				</div>
-				<div class="sec8_singlebox">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_3.jpg" alt="">
-					<div class="sec8_singlebox_txtbox">
-						<p class="sec8_singlebox_txt1">차 한 잔은 차분하게 하루를 정리하고 내일로 <br>한 걸음 더 나아가게 만드는 기분이 들어요. <br>하루를 마무리하는 온점 같은 시간이라고 할까.</p>
-						<p class="sec8_singlebox_txt2">가구 브랜드 대표 양윤선</p>
-					</div>
+				<div class="footer_top_info_right">
+					<p class="footer_top_info_right_title">특판, 대량구매 문의</p>
+					<p class="footer_top_info_right_email">mall@osulloc.com</p>
+					<p class="footer_top_info_right_kakao">카카오톡ID : osullocmall</p>
+					<p class="footer_top_info_right_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
 				</div>
-				<div class="sec8_doublebox">
-					<div>
-						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_4.jpg" alt=""></div>
-						<div>
-							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_5.jpg" alt=""></div>
-						</div>
-					</div>
+			</div>
+			<div class="footer_top_icon">
+				<div>
+					<img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="">
+					매장안내
+				</div>
+				<div>
+					<img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="">
+					멤버십혜택
+				</div>
+				<div>
+					<img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="">
+					단체 및<br>기업구매
+				</div>
+				<div>
+					<img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="">
+					1:1문의
+				</div>
+				<div>
+					<img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="">
+					뷰티포인트 <br>추후적립
+				</div>
+			</div>
+		</div>
+		<div class="footer_btm">
+			<a href="index.html">
+				<img class="footer_btm_img1" src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" alt="">
+			</a>
+			<div>
+				<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>
+				<p class="footer_btmtxt2">㈜ 오설록<br>
+					대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 <br> 통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록</p>
+					<p class="footer_btmtxt3">주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>
+				</div>
+				<img class="footer_btm_img2" src="img/footerLogo.png" alt="">
 
+			</div>
 
-					<div class="sec8_box">
-						<div class="sec8_doublebox">
-							<div>
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_6.jpg" alt="">
-							</div>
-							<div>
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_7.jpg" alt="">
-							</div>
-						</div>
-						<div class="sec8_singlebox">
-							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_8.jpg" alt="">
-							<div class="sec8_singlebox_txtbox">
-								<p class="sec8_singlebox_txt1">운동을 매일 하는 것도 중요하지만 가장 신경<br> 쓰는 부분은 수분 보충이에요. 운동 전에 물을 <br>마시고 운동을 마치면 따뜻한 차를 마셔요.</p>
-								<p class="sec8_singlebox_txt2">러닝 트레이너 임소영</p>
-							</div>
-						</div>
-						<div class="sec8_singlebox">
-							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_9.jpg" alt="">
-							<div class="sec8_singlebox_txtbox_top">
-								<p class="sec8_singlebox_txt1">후각이 예민하다 보니 차를 마실 때도 향을 가장<br> 신경 써요. 좋은 향을 내는 차가 심신에 안정을 <br>줘서 더 즐기게 됐어요.</p>
-								<p class="sec8_singlebox_txt2">채식 요리 연구가 신주하</p>
-							</div>
-						</div>
-					</div>
+		</section>
 
+	</div>
 
-					<div class="sec8_box">
-						<div class="sec8_singlebox">
-							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_10.jpg" alt="">
-							<div class="sec8_singlebox_txtbox_top">
-								<p class="sec8_singlebox_txt1">작업에 집중하기 시작하면 쉴 틈이 없는 제게,<br> 차 한잔의 여유는 정말 소중하거든요.</p>
-								<p class="sec8_singlebox_txt2">테이핑 아티스트 박건우</p>
-							</div>
-						</div>
-						<div class="sec8_singlebox">
-							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_11.jpg" alt="">
-							<div class="sec8_singlebox_txtbox">
-								<p class="sec8_singlebox_txt1">차가운 공기 때문인지 진한 자연의 냄새와 <br>차 향이 함께 느껴지는데 집에서 마실 <br>때와는 또 다르더라고요.</p>
-								<p class="sec8_singlebox_txt2">오지 캠퍼 강서구</p>
-							</div>
-						</div>
-						<div class="sec8_doublebox">
-							<div>
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_12.jpg" alt=""></div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_13.jpg" alt=""></div>
-								</div>
-							</div>
-
-
-						</div>
-
-					</section>
-					<section id="sec9">
-						<div class="sec9_title">
-							<h1>오설록의 더 많은 이야기를 만나보세요.</h1>
-						</div>
-						<div class="sec9_body">	
-							<div><a href="subpage4.html">다다일상 > </a></div>
-							<div><a href="subpage2.html">베스트 제품 > </a></div>
-							<div><a href="subpage1.html">위클리 베스트 제품 > </a></div>
-							<div><a href="">선물추천! > </a></div>
-						</div>
-						
-					</section>
-
-
-
-
-
-
-					<section id="footer">
-						<div class="footer_tgBox">
-							<div>오설록 사업자 정보확인</div>
-							<button id="toggleFooter">>Click!<</button>
-						</div>
-						<div class="mini_footer">					
-							<div class="hide_footer_txt">
-								<p>㈜ 오설록<br>
-									대표이사 : 서혁제<br>
-									주소 : 서울 특별시 용산구 한강대로 100 (한강로2가)<br>
-									사업자 등록번호 : 390-87-01499<br>
-									통신판매업신고번호 : 2019-서울용산-1173호<br>
-									호스팅제공자 : ㈜오설록<br>
-									<br>
-									(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 <br>
-									통신판매중개자 이며 통신판매의 당사자가 아닙니다.<br>
-									따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.<br>
-									<br>
-									NHN KCP 구매안전(에스크로)서비스<br>
-									고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한<br> 
-								NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
-							</div>
-							<hr>
-							<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>									
-						</div>
-
-						<div class="footer_login">
-							<div class="footer_login_box">
-								<p>로그인</p>
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="">
-								<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="">
-								<img src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="">
-							</div>
-						</div>
-						<div class="footer_top">
-							<div class="footer_top_info">
-								<div class="footer_top_info_left">
-									<p class="footer_top_info_left_title">고객상담센터 · 주문/배송문의</p>
-									<p class="footer_top_info_left_email">help@osulloc.com</p>
-									<p class="footer_top_info_left_tell">080-805-5555</p>
-									<p class="footer_top_info_left_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
-								</div>
-								<div class="footer_top_info_right">
-									<p class="footer_top_info_right_title">특판, 대량구매 문의</p>
-									<p class="footer_top_info_right_email">mall@osulloc.com</p>
-									<p class="footer_top_info_right_kakao">카카오톡ID : osullocmall</p>
-									<p class="footer_top_info_right_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
-								</div>
-							</div>
-							<div class="footer_top_icon">
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="">
-									매장안내
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="">
-									멤버십혜택
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="">
-									단체 및<br>기업구매
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="">
-									1:1문의
-								</div>
-								<div>
-									<img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="">
-									뷰티포인트 <br>추후적립
-								</div>
-							</div>
-						</div>
-						<div class="footer_btm">
-							<a href="index.html">
-								<img class="footer_btm_img1" src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" alt="">
-							</a>
-							<div>
-								<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>
-								<p class="footer_btmtxt2">㈜ 오설록<br>
-									대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 <br> 통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록</p>
-									<p class="footer_btmtxt3">주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>
-								</div>
-								<img class="footer_btm_img2" src="img/footerLogo.png" alt="">
-
-							</div>
-
-						</section>
-
-					</div>
-
-					<script>
+	<script>
 		// ================메인메뉴 스크립트====================
-						$(function () {
-							let Mainli = $("#Mainmenu");
-							let MainA = $("#Mainmenu a");
-							let MainLogo = $("#Mainmenu h1 a img");
-							let originalLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png";
-							let hoverLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png";
-							let hideMenu = $(".hideMenu");
-							let hideList =$(".hideMenu ul");
-							let left_menu = $(".left_box ul li a");
+		$(function () {
+			let Mainli = $("#Mainmenu");
+			let MainA = $("#Mainmenu a");
+			let MainLogo = $("#Mainmenu h1 a img");
+			let originalLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png";
+			let hoverLogoUrl = "https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png";
+			let hideMenu = $(".hideMenu");
+			let hideList =$(".hideMenu ul");
+			let left_menu = $(".left_box ul li a");
 
-							hideMenu.hide();
+			hideMenu.hide();
 
-							function showMainMenu() {
-								Mainli.css("background", "white");
-								MainA.css("color", "#333333");
-							}
+			function showMainMenu() {
+				Mainli.css("background", "white");
+				MainA.css("color", "#333333");
+			}
 
-							function hideMainMenu() {
-								Mainli.css("background", "white");
-								MainA.css("color", "#333333");
-							}
+			function hideMainMenu() {
+				Mainli.css("background", "white");
+				MainA.css("color", "#333333");
+			}
 
-							Mainli.hover(
-								function () {
-									showMainMenu();
-								},
-								function () {
+			Mainli.hover(
+				function () {
+					showMainMenu();
+				},
+				function () {
             // 마우스가 hideMenu를 벗어나면 Mainmenu가 숨겨져 있을 때만 hideMainMenu실행
-									if (!hideMenu.is(":visible")) {
-										hideMainMenu();
-									}
-								}
-								);
-							$('.left_box ul li a').hover(
-								function() {
+					if (!hideMenu.is(":visible")) {
+						hideMainMenu();
+					}
+				}
+				);
+			$('.left_box ul li a').hover(
+				function() {
         // 마우스가 요소 위에 있을 때
-									$(this).css("color", "green");
-								},
-								function() {
+					$(this).css("color", "green");
+				},
+				function() {
         // 마우스가 요소를 벗어났을 때
-									$(this).css("color", "white");
-								}
-								);
+					$(this).css("color", "white");
+				}
+				);
 
 
-							MainA.hover(
-								function () {
-									$(this).css("color", "green");
-								},
-								function () {
-									$(this).css("color", "#333333");
-								}
-								);
+			MainA.hover(
+				function () {
+					$(this).css("color", "green");
+				},
+				function () {
+					$(this).css("color", "#333333");
+				}
+				);
 
-							left_menu.eq(0).hover(
-								function () {
-									hideMenu.slideDown();
+			left_menu.eq(0).hover(
+				function () {
+					hideMenu.slideDown();
             showMainMenu(); // hideMenu가 나타날 때 Mainmenu도 hover 상태로 유지
         },
         function () {
@@ -2615,101 +2327,101 @@ min-width: 200px;
 
 
 
-						$(function(){
-							let burger_close_Btn = $("#smallMenu span");
-							let burgerMenuBtn = $(".burgerBtn");
-							let burgerMenu = $("#smallMenu");
-							let body = $("body");
+		$(function(){
+			let burger_close_Btn = $("#smallMenu span");
+			let burgerMenuBtn = $(".burgerBtn");
+			let burgerMenu = $("#smallMenu");
+			let body = $("body");
 
-							burgerMenu.hide();
+			burgerMenu.hide();
 
     // smallMenu 내부에서 스크롤이 가능하도록 설정
-							burgerMenu.css("overflow-y", "auto");
+			burgerMenu.css("overflow-y", "auto");
 
-							burgerMenuBtn.click(function(event){
-								event.stopPropagation(); 
-								burgerMenu.show();
+			burgerMenuBtn.click(function(event){
+				event.stopPropagation(); 
+				burgerMenu.show();
         body.css("overflow", "hidden"); // 배경 스크롤 비활성화
     });
 
-							burger_close_Btn.click(function(){
-								burgerMenu.hide();
+			burger_close_Btn.click(function(){
+				burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
 
-							$(document).click(function() {
-								burgerMenu.hide();
+			$(document).click(function() {
+				burgerMenu.hide();
         body.css("overflow", "auto"); // 배경 스크롤 다시 활성화
     });
-						});
+		});
 
 
 
 
 	// ==============================섹션2 스위퍼===============================
-						var swiper = new Swiper(".mySwiper1", {
-							spaceBetween: 30,
-							effect: "fade",
-							loop: true,
-							navigation: {
-								nextEl: ".swiper-button-next",
-								prevEl: ".swiper-button-prev",
-							},
-							pagination: {
-								el: ".swiper-pagination",
-								clickable: true,
-							},
-						});
+		var swiper = new Swiper(".mySwiper1", {
+			spaceBetween: 30,
+			effect: "fade",
+			loop: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
 			// ==========================섹션 3 모달======================					
 
-						$(function(){
-							$("#sec3_modal").hide();
-							$(".modal-backdrop").hide();
-							$(".sec3_title button").click(function(){
+		$(function(){
+			$("#sec3_modal").hide();
+			$(".modal-backdrop").hide();
+			$(".sec3_title button").click(function(){
 
-								$("#sec3_modal").show();
-								$(".modal-backdrop").show();
+				$("#sec3_modal").show();
+				$(".modal-backdrop").show();
         				$("body").css("overflow", "hidden"); // 스크롤 비활성화
         			});
 
 
-							$(".close, .modal-backdrop").click(function(){
-								$("#sec3_modal").hide();
-								$(".modal-backdrop").hide();
+			$(".close, .modal-backdrop").click(function(){
+				$("#sec3_modal").hide();
+				$(".modal-backdrop").hide();
        						 $("body").css("overflow", "auto"); // 스크롤 활성화
        						});
-						});
+		});
 
 
 					// =====================섹션 4 모달스======================
 
-						$(function(){
-							let s4_modal01 = $(".sec4_box1_modal");
-							let s4_modal02 = $(".sec4_box2_modal");
-							let s4_modal03 = $(".sec4_box3_modal");
-							let s4_modalbtn01 = $(".sec4_box1_text button");
-							let s4_modalbtn02 = $(".sec4_box2_text button");
-							let s4_modalbtn03 = $(".sec4_box3_text button");
+		$(function(){
+			let s4_modal01 = $(".sec4_box1_modal");
+			let s4_modal02 = $(".sec4_box2_modal");
+			let s4_modal03 = $(".sec4_box3_modal");
+			let s4_modalbtn01 = $(".sec4_box1_text button");
+			let s4_modalbtn02 = $(".sec4_box2_text button");
+			let s4_modalbtn03 = $(".sec4_box3_text button");
 
 
-							s4_modal01.hide();
-							s4_modal02.hide();
-							s4_modal03.hide();
-							$(".modal-backdrop").hide();
+			s4_modal01.hide();
+			s4_modal02.hide();
+			s4_modal03.hide();
+			$(".modal-backdrop").hide();
 
-							s4_modalbtn01.click(function(){
-								s4_modal01.show();
-								$(".modal-backdrop").show();
+			s4_modalbtn01.click(function(){
+				s4_modal01.show();
+				$(".modal-backdrop").show();
         				$("body").css("overflow", "hidden"); // 스크롤 비활성화
         			});
-							s4_modalbtn02.click(function(){
-								s4_modal02.show();
-								$(".modal-backdrop").show();
+			s4_modalbtn02.click(function(){
+				s4_modal02.show();
+				$(".modal-backdrop").show();
         				$("body").css("overflow", "hidden"); // 스크롤 비활성화
         			});
-							s4_modalbtn03.click(function(){
-								s4_modal03.show();
-								$(".modal-backdrop").show();
+			s4_modalbtn03.click(function(){
+				s4_modal03.show();
+				$(".modal-backdrop").show();
         				$("body").css("overflow", "hidden"); // 스크롤 비활성화
         			});
 
@@ -2717,118 +2429,118 @@ min-width: 200px;
 
 
 
-							$(".close, .modal-backdrop").click(function(){
-								s4_modal01.hide();
-								s4_modal02.hide();
-								s4_modal03.hide();
-								$(".modal-backdrop").hide();
+			$(".close, .modal-backdrop").click(function(){
+				s4_modal01.hide();
+				s4_modal02.hide();
+				s4_modal03.hide();
+				$(".modal-backdrop").hide();
        						 $("body").css("overflow", "auto"); // 스크롤 활성화
        						});
-						});
+		});
 
 
-						$(function() {
-							$(".sec5_box").each(function() {
-								var $thisBox = $(this);
-								var $btn1 = $thisBox.find(".sec5_box_btn1");
-								var $btn2 = $thisBox.find(".sec5_box_btn2");
-								var $body1 = $thisBox.find(".sec5_box_body1");
-								var $body2 = $thisBox.find(".sec5_box_body2");
+		$(function() {
+			$(".sec5_box").each(function() {
+				var $thisBox = $(this);
+				var $btn1 = $thisBox.find(".sec5_box_btn1");
+				var $btn2 = $thisBox.find(".sec5_box_btn2");
+				var $body1 = $thisBox.find(".sec5_box_body1");
+				var $body2 = $thisBox.find(".sec5_box_body2");
 
-								$btn1.click(function() {
-									$body2.stop().animate({opacity: 0.8}, 0.5, function() {
+				$btn1.click(function() {
+					$body2.stop().animate({opacity: 0.8}, 0.5, function() {
             	$body1.show().animate({opacity: 1}, 0.5); // 먼저 show 후 투명도 조정
                 $(this).hide(); // 이제 display를 none으로 설정
                 
             });
-								});
+				});
 
-								$btn2.click(function() {
-									$body1.stop().animate({opacity: 0.8}, 0.5, function() {
+				$btn2.click(function() {
+					$body1.stop().animate({opacity: 0.8}, 0.5, function() {
             	$body2.show().animate({opacity: 1}, 0.5); // 먼저 show 후 투명도 조정
                 $(this).hide(); // 이제 display를 none으로 설정
                 
             });
-								});
+				});
 
         // 초기 상태 설정
-								$body1.css({display: 'block', opacity: 1});
-								$body2.css({display: 'none', opacity: 0});
-							});
-						});
+				$body1.css({display: 'block', opacity: 1});
+				$body2.css({display: 'none', opacity: 0});
+			});
+		});
 
 
 
 
 
 
-						var swiper = new Swiper(".mySwiper_sec6", {
-							slidesPerView: 5,
-							centeredSlides: true,
-							spaceBetween: 30,
-							grabCursor: true,
-							loop: true,
-							scrollbar: {
-								el: ".swiper-scrollbar",
-							},
-							pagination: {
-								el: ".swiper-pagination",
-								clickable: true,
-							},
-						});
+		var swiper = new Swiper(".mySwiper_sec6", {
+			slidesPerView: 5,
+			centeredSlides: true,
+			spaceBetween: 30,
+			grabCursor: true,
+			loop: true,
+			scrollbar: {
+				el: ".swiper-scrollbar",
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
 
 
-						var swiper = new Swiper(".mySwiper_sec7", {
-							effect: "coverflow",
-							grabCursor: true,
-							slidesPerView: 1,
-							loop: true,
-							centeredSlides: true,
-							slidesPerView: "auto",
-							coverflowEffect: {
-								rotate: 0,
-								stretch: 0,
-								depth: 100,
-								modifier: 1,
-								slideShadows: true,
-							},
-							pagination: {
-								el: ".swiper-pagination",
-							},
-						});
+		var swiper = new Swiper(".mySwiper_sec7", {
+			effect: "coverflow",
+			grabCursor: true,
+			slidesPerView: 1,
+			loop: true,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+			},
+		});
 
 
 
 
 
 				//footer 영역 토글 구현
-						document.addEventListener('DOMContentLoaded', function() {
-							var toggleButton = document.getElementById('toggleFooter');
-							var miniFooter = document.querySelector('.mini_footer');
+		document.addEventListener('DOMContentLoaded', function() {
+			var toggleButton = document.getElementById('toggleFooter');
+			var miniFooter = document.querySelector('.mini_footer');
 
-							toggleButton.addEventListener('click', function() {
+			toggleButton.addEventListener('click', function() {
 						// 화면 너비가 1050px 이하일 때만 토글 기능이 작동합니다.
-								if (window.innerWidth <= 1050) {
-									miniFooter.style.display = miniFooter.style.display === 'block' ? 'none' : 'block';
-								}
-							});
+				if (window.innerWidth <= 1050) {
+					miniFooter.style.display = miniFooter.style.display === 'block' ? 'none' : 'block';
+				}
+			});
 
 					// 화면 크기 변경에 따라 mini_footer의 표시 여부를 조정합니다.
-							window.addEventListener('resize', function() {
-								if (window.innerWidth > 1050) {
-									miniFooter.style.display = 'none';
-								} else {
+			window.addEventListener('resize', function() {
+				if (window.innerWidth > 1050) {
+					miniFooter.style.display = 'none';
+				} else {
 							// 화면이 1050px 이하로 변경될 때 기본적으로 숨깁니다.
-									miniFooter.style.display = 'none';
-								}
-							});
-						});
+					miniFooter.style.display = 'none';
+				}
+			});
+		});
 
 
 
 
-					</script>
+	</script>
 
 
-				</body>
-				</html>
+</body>
+</html>
