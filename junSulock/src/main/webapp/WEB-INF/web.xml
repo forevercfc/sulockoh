@@ -1,0 +1,25 @@
+<web-app>
+	<servlet>
+		<servlet-name>BoardController</servlet-name>
+		<servlet-class>mvc.controller.BoardController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<tracking-mode>COOKIE</tracking-mode>
+		<session-timeout>800</session-timeout>
+	</session-config>
+	
+	
+<!--예외설정  -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/step11/exceptionNopage.jsp</location>
+	</error-page>
+
+
+</web-app>
