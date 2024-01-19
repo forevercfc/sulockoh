@@ -1,0 +1,25 @@
+select*from tab;
+
+--osulock member table
+
+create table ohsulock_Member(
+    id varchar2(30) primary key,
+    password varchar2(20) not null,
+    name varchar2(30) not null,
+    gender CHAR(3) ,
+    birth varchar2(30),
+    mail varchar2(30),
+    phone varchar2(30),
+    postcode VARCHAR2(20),
+    address VARCHAR2(100),
+    detailAddress VARCHAR2(100),
+    extraAddress VARCHAR2(100),
+    logtime date default sysdate
+);
+
+INSERT INTO ohsulock_Member VALUES ('admin', '1234', '관리자', '남', TO_DATE('1990-01-01', 'YYYY-MM-DD'), 'admin@example.com', '010-1234-5678','123','서울시','강남구','강남역', SYSDATE);
+
+
+drop table ohsulock_Member;
+commit; 
+select * from ohsulock_Member;
