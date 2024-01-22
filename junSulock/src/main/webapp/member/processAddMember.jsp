@@ -27,11 +27,26 @@
     MemberDAO dao = new MemberDAO();
     boolean success = dao.registerMember(member);
 
+ 
     if (success) {
-        out.println("회원가입 성공!");
+        // 회원가입 성공 메시지 출력 후, 로그인 페이지로 리다이렉트
+%>
+        <script type="text/javascript">
+            alert("회원가입 성공! 다시 로그인 해주세요.");
+            window.location.href = "loginMember.jsp"; // 리다이렉트할 페이지 경로
+        </script>
+<%
     } else {
-        out.println("회원가입 실패!");
+        // 회원가입 실패 메시지 출력 후, 다시 회원가입 페이지로 리다이렉트
+%>
+        <script type="text/javascript">
+            alert("회원가입 실패!");
+            window.location.href = "addMember.jsp"; // 리다이렉트할 페이지 경로
+        </script>
+<%
     }
+%>
+
 %>
 </body>
 </html>

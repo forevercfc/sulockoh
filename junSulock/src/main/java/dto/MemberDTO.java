@@ -18,7 +18,7 @@ public class MemberDTO {
 
 	public MemberDTO() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	public String getId() {
