@@ -1,0 +1,574 @@
+/*=====================맨위====================*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+}
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow-x: hidden;
+}
+section,
+#Mainmenu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*	border: 3px solid orange;*/
+}
+/*=====================메인메뉴====================*/
+#Mainmenu {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 999;
+}
+
+#Mainmenu .left_box img {
+  position: relative;
+  top: 10px;
+}
+
+.left_box ul li a,
+.right_box ul li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.left_box {
+  width: 45%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 10%;
+}
+.left_box ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.left_box ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.center_box {
+  width: 20%;
+}
+
+.right_box {
+  width: 35%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 10%;
+}
+.right_box ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.right_box ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.left_box ul li a:hover,
+.right_box ul li span:hover {
+  color: green !important;
+}
+.right_box .burgerBtn {
+  cursor: pointer;
+}
+
+/*    ============================숨겨진 메뉴================*/
+.hideMenu {
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  /*  border: 1px solid red;*/
+  z-index: 999;
+  top: 70px;
+  background-color: white;
+}
+.hideMenu ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+  left: 19%;
+  top: 10%;
+  line-height: 30px;
+  /*		  border: 1px solid red;*/
+  /*    font-weight: bold;*/
+}
+
+.hideMenu ul li:hover {
+  color: green;
+}
+
+.hideMenu .hideMenu_img {
+  position: relative;
+  left: 62%;
+  top: -50px;
+  width: 330px;
+  height: 370px;
+}
+.hideMenu .hideMenu_img img {
+  position: relative;
+  right: 0;
+}
+
+/*======================작은사이즈 버거메뉴===========*/
+#smallMenu {
+  background-color: white;
+  height: 100%;
+  right: -10px;
+  width: 80%;
+  max-width: 500px;
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  padding: 10px;
+  font-weight: bold;
+}
+#smallMenu ul li {
+  margin: 20px;
+}
+
+#smallMenu img {
+  width: 80%;
+}
+
+#smallMenu .material-symbols-outlined {
+  position: relative;
+  left: 90%;
+  margin-top: 10px;
+  /*	border: 1px solid red;*/
+}
+
+#smallMenu span {
+  cursor: pointer;
+}
+
+/* ===================위클리====================== */
+
+.weekly_Logo {
+  /*	border: 1px solid red;*/
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.weekly_Logo hideMenu_img {
+  width: 100%;
+  height: 100%;
+}
+
+.weekly_Logo .best {
+  position: absolute;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.weekly {
+  /*    border: 1px solid red;*/
+  width: 880px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.weekly_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.weekly_list_number {
+  /*	border: 1px solid red;*/
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  background-color: #666666;
+  color: white;
+  font-weight: bold;
+}
+.weekly_list img {
+  background-color: #f9f9f9;
+  width: 211px;
+  height: 236px;
+}
+
+.weekly_list_discount {
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+}
+.weekly_list_cost {
+  font-size: 18px;
+  font-weight: bold;
+}
+.weekly_list_sale {
+  color: #6e9a9a;
+  font-weight: bold;
+}
+.weekly_list_box {
+  border: 1px solid #a89079;
+  background-color: #a89079;
+  width: 70px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.choice_box,
+.weekly_title {
+  /*	border: 1px solid red;*/
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.wbest_choice {
+  border: 1px solid #6c801a;
+  background-color: #6c801a;
+  width: 147px;
+  text-align: center;
+  height: 40px;
+  font-size: 18px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.best_choice {
+  border: 1px solid #f6f6f6;
+  width: 96px;
+  text-align: center;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-radius: 100px;
+}
+.wbest_choice a {
+  color: white;
+  font-weight: bold;
+}
+.best_choice a {
+  color: #999999;
+  font-weight: 500;
+}
+
+#sec9 {
+  height: 450px;
+  margin-top: 150px;
+  margin-bottom: 500px;
+}
+
+#sec9 .footer_login {
+  height: 15%;
+  background-color: #67625d;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#sec9 .footer_login_box {
+  width: 80%;
+  height: 100%;
+  left: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#sec9 .footer_login p {
+  /*	border: 1px solid black; */
+  width: 94px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: #3f3e3c;
+  text-align: center;
+  position: relative;
+  border-radius: 10%;
+  line-height: 40px;
+}
+#sec9 .footer_login p,
+#sec9 .footer_login img {
+  margin: 0 10px;
+}
+#sec9 .footer_top {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  /*	border: 1px solid blue;*/
+  display: flex;
+  background-color: #f2f2f2;
+}
+#sec9 .footer_top_info {
+  /*	border: 1px solid red;*/
+  height: 100%;
+  width: 40%;
+  margin-left: 10%;
+  display: flex;
+}
+#sec9 .footer_top_info_left,
+#sec9 .footer_top_info_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 25px;
+}
+
+#sec9 .footer_top_info_left_title {
+  font-size: 14px;
+  color: dimgray;
+}
+#sec9 .footer_top_info_left_email {
+  font-size: 18px;
+}
+#sec9 .footer_top_info_left_tell {
+  font-size: 33.7px;
+}
+#sec9 .footer_top_info_left_time {
+  font-size: 12px;
+  color: dimgray;
+}
+
+#sec9 .footer_top_info_right_title {
+  font-size: 14px;
+  color: dimgray;
+}
+#sec9 .footer_top_info_right_email {
+  font-size: 18px;
+}
+#sec9 .footer_top_info_right_kakao {
+  font-size: 13px;
+}
+#sec9 .footer_top_info_right_time {
+  font-size: 12px;
+  color: dimgray;
+}
+
+#sec9 .footer_top_icon {
+  width: 45%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec9 .footer_top_icon div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  white-space: nowrap;
+}
+
+#sec9 .footer_btm {
+  /*	border: 1px solid red;*/
+  width: 80%;
+  height: 45%;
+  position: relative;
+  display: flex;
+  left: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+#sec9 .footer_btm a {
+  width: 120px;
+}
+
+#sec9 .footer_btm_img1 {
+  width: 112px;
+  height: 158px;
+  position: relative;
+  top: 20px;
+}
+#sec9 .footer_btm_img2 {
+  width: 300px;
+  height: 110px;
+  position: relative;
+  border: 0.5px solid lightgray;
+}
+#sec9 .footer_btm .footer_btmtxt1 {
+  font-size: 12px;
+  font-weight: bold;
+}
+#sec9 .footer_btm .footer_btmtxt2,
+#sec9 .footer_btm .footer_btmtxt3 {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+#sec9 .mini_footer,
+#sec9 .footer_tgBox {
+  display: none;
+}
+
+/*==========================미디어 쿼리======================*/
+@media screen and (max-width: 1280px) {
+  .left_box ul,
+  #login {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /*	===============#sec9==========*/
+  /*#sec9{
+	position: relative;
+	top: -100px;
+}*/
+
+  .weekly {
+    /*    border: 1px solid red;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+  }
+
+  .weekly_list img {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: auto;
+  }
+
+  .burgerBtn {
+    opacity: 1;
+  }
+
+  #sec9 .footer_tgBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  #sec9 .footer_tgBox #toggleFooter {
+    border: none;
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  #sec9 .footer_login,
+  #sec9 .footer_top_icon,
+  #sec9 .footer_btm {
+    display: none;
+  }
+  #sec9 .footer_top_info {
+    width: 100%;
+  }
+
+  #sec9 .footer_top_info_left_title {
+    font-size: 10px;
+    color: dimgray;
+  }
+  #sec9 .footer_top_info_left_email {
+    font-size: 15px;
+  }
+  #sec9 .footer_top_info_left_tell {
+    font-size: 22px;
+  }
+  #sec9 .footer_top_info_left_time {
+    font-size: 10px;
+    color: dimgray;
+  }
+
+  #sec9 .footer_top_info_right_title {
+    font-size: 10px;
+    color: dimgray;
+  }
+  #sec9 .footer_top_info_right_email {
+    font-size: 15px;
+  }
+  #sec9 .footer_top_info_right_kakao {
+    font-size: 11px;
+  }
+  #sec9 .footer_top_info_right_time {
+    font-size: 10px;
+    color: dimgray;
+  }
+  #sec9 .mini_footer .hide_footer_txt {
+    background-color: #f2f2f2;
+  }
+
+  #sec9 .mini_footer .hide_footer_txt p {
+    font-size: 12px;
+    color: gray;
+    margin-left: 10px;
+  }
+  #sec9 .mini_footer .footer_btmtxt1 {
+    font-size: 12px;
+    text-align: center;
+  }
+}
