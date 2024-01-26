@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>수정설록_스토리</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+  <!-- css연결 -->
+  <link rel="stylesheet" href="css/sub3Css.css" />
+  <!-- 스크립트 연결 -->
+  <script src="js/sub3Js.js"></script>
+
+
+<body>
+	<div id="wrapper">
+      <header id="Mainmenu">
+        <div class="left_box">
+          <h1>
+            <a href="index.html"
+              ><img
+                src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+                alt=""
+            /></a>
+          </h1>
+          <ul>
+            <li><a href="subpage1.html">제품</a></li>
+            <li><a href="subpage5.html">선물추천</a></li>
+            <li><a href="subpage4.html">다다일상</a></li>
+            <li><a href="subpage3.html">브랜드</a></li>
+          </ul>
+        </div>
+        <div class="center_box"></div>
+        <div class="right_box">
+          <!-- 구현 후 a태그 추가하기 -->
+          <ul>
+            <li>
+              <span class="material-symbols-outlined"> search </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </li>
+            <li class="burgerBtn">
+              <span class="material-symbols-outlined"> menu </span>
+            </li>
+          </ul>
+          <ul id="login">
+            <li><a href="loginMember.html">로그인</a></li>
+            <li><a href="addMember.html">회원가입</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="hideMenu">
+        <ul>
+          <a href="subpage1.html"><li>위클리베스트(subpage1연결)</li></a>
+          <a href="subpage2.html"><li>베스트((subpage2연결))</li></a>
+        </ul>
+        <ul>
+          <li style="color: rgb(192, 192, 192)">작업중</li>
+          <!-- <li>티 세트</li>
+          <li>명차</li>
+          <li>녹차/말차</li>
+          <li>발효차/홍차</li>
+          <li>블렌디드티</li>
+          <li>허브티</li>
+          <li>밀크티/아이스티</li>
+          <li>콤부차</li> -->
+        </ul>
+        <ul>
+          <li style="color: rgb(192, 192, 192)">작업중</li>
+          <!-- <li>과자/초콜릿</li>
+          <li>베이커리</li>
+          <li>아이스크림</li> -->
+        </ul>
+        <ul>
+          <li style="color: rgb(192, 192, 192)">작업중</li>
+          <!-- <li>용도별</li>
+          <li>브랜드별</li> -->
+        </ul>
+        <ul>
+          <li style="color: rgb(192, 192, 192)">작업중</li>
+          <!-- <li>스킨케어</li>
+          <li>단체 및 기업 구매</li> -->
+        </ul>
+        <div class="hideMenu_img">
+          <img
+            src="https://image.osulloc.com/upload/kr/ko/adminImage/RT/FM/20231231234524683OH.jpg"
+            width="330px"
+            height="370px"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="smallMenu">
+        <div>
+          <div>
+            <span class="material-symbols-outlined">close</span>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <a href="subpage1.html"><li>위클리베스트(subpage1연결)</li></a>
+            <hr />
+            <a href="subpage2.html"><li>베스트(subpage2연결)</li></a>
+            <hr />
+            <a href="subpage4.html"><li>다다일상</li></a>
+            <hr />
+            <a href="subpage3.html"><li>브랜드</li></a>
+            <hr />
+            <a href="subpage5.html"><li>선물추천</li></a>
+          </ul>
+        </div>
+        <img
+          src="https://image.osulloc.com/upload/kr/ko/adminImage/VW/TT/20231231234528926RY.jpg"
+          alt=""
+        />
+        <div>
+          <div><a href="loginMember.html">로그인</a></div>
+          <div><a href="addMember.html">회원가입</a></div>
+        </div>
+      </div>
+
+				<div id="subpage3_main">	
+					<section id="sec1">
+						<div class="video_sticky"></div>
+						<div class="video_wrapper">
+							<div class="video_title">
+								<h1 class="video_title_text">TEA FROM JEJU</h1>
+								<p>대한민국이 가진 천혜의 자연 유산 제주,<br>화산섬 제주가 가진 경이로운 생명력으로<br>오설록의 차는 탄생합니다.</p>
+							</div>
+							<div class="video_thumbnail pc_thumbnail">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/video_thumb_pc_color2.png" alt="">
+							</div>
+							<div class="video_thumbnail mo_thumbnail">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/video_thumb_mo_color2.png" alt="">
+							</div>
+							<iframe src="https://player.vimeo.com/video/709357001?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s" frameborder="0" allowfullscreen class="pc-video"></iframe>
+							<iframe src="https://player.vimeo.com/video/709357094?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s" frameborder="0" allowfullscreen class="mo-video"></iframe>
+						</div>
+					</section>
+				</div>
+
+				
+
+
+				<section id="sec2">
+					
+					<div id="circle_div"></div>
+
+					<!-- Swiper 첫번째 -->
+					<div class="swiper mySwiper1 sec2_box1">
+						
+						<div class="swiper-wrapper">
+
+
+							<div class="swiper-slide">
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_1.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_1.png" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_2.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_2.png" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_3.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_3.png" alt="">
+								</div>								
+							</div>
+							<div class="swiper-slide">					
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_4.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_4.png" alt="">
+								</div>								
+							</div>
+							<div class="swiper-slide">							
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_5.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_5.png" alt="">
+								</div>								
+							</div>							
+						</div>						
+					</div>
+
+					<!-- Swiper 두번째 -->
+
+					<div class="swiper mySwiper1 sec2_box2">
+						
+						<div class="swiper-wrapper">
+
+
+							<div class="swiper-slide">
+								<div class="swiper_title">
+									<h1>생명을 품은 화산섬의 흙</h1>
+									<p>최대 공극률 75%</p>
+								</div>
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_2.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_2.png" alt="">
+								</div>
+								<div class="swiper_txt">
+									<p>
+										
+										제주의 흙은 전 세계적으로도 손꼽히는 공극률로 물과 공기의 흐름을 원활하게 하고 일반 토양보다 10배나 높은 유기물을 함유하고 있습니다. 다공성 제주 현무암의 미세한 틈은 차나무를 건강하게 유지하여 제주차만의 차이를 만들어 냅니다.
+
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_title">
+									<h1>청정 화산 암반수</h1>
+									<p>1,800mm 빗물의 천연필터</p>
+								</div>
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_3.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_3.png" alt="">
+								</div>
+								<div class="swiper_txt">
+									<p>
+										제주의 화산 암반수는 맑은 물을 넘어 ‘좋은 물’의 대명사입니다. 천연 필터 역할을 하는 화산 토양은 제주의 암반수를 더욱 깨끗하게 만들어 차 나무에 신선하게 공급됩니다.	 
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_title">
+									<h1>제주의 거친 바람</h1>
+									<p>연평균 초속 4~7m</p>
+								</div>
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_4.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_4.png" alt="">
+								</div>
+								<div class="swiper_txt">
+									<p>
+										
+										거친 제주의 바람이지만 실은 차 재배에는 더 없이 소중한 제주의 바람입니다. 남쪽의 먼 바다에서 연평균 초속 4~7m의 거센 바람이 불어와 뿌리의 수분 흡수를 증가시켜 차의 향기를 짙게 만들고, 찻잎의 불순물을 씻어내는 에어워셔의 효과로 제주 차만의 특별함을 더합니다.
+
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_title">
+									<h1>아열대 기후의 화산섬</h1>
+									<p>연평균 기온 16도씨</p>
+								</div>
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_5.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_5.png" alt="">
+								</div>
+								<div class="swiper_txt">
+									<p>
+										
+										제주 차밭은 화산섬이 만든 완만한 지형의 고저로 인해 식물 에너지의 근원인 태양을 한껏 끌어안습니다. 사계절 내내 쏟아지는 따뜻한 빛은 연 평균 기온을 14~16℃로 유지해 차가 건강하게 자랄 수 있는 온도를 제공합니다.
+
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_title">
+									<h1>한라산이 빚은 안개</h1>
+									<p>연평균 해무 발생일수 25일</p>
+								</div>
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_1.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_1.png" alt="">
+								</div>
+								<div class="swiper_txt">
+									<p>
+										제주의 화산 암반수는 맑은 물을 넘어 ‘좋은 물’의 대명사입니다. 천연 필터 역할을 하는 화산 토양은 제주의 암반수를 더욱 깨끗하게 만들어 차 나무에 신선하게 공급됩니다.
+									</p>
+								</div>
+							</div>							
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>									
+
+					<!-- Swiper 세번째 -->
+					<div class="swiper mySwiper1 sec2_box3">
+						
+						<div class="swiper-wrapper">
+							
+							
+							<div class="swiper-slide">
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_3.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_3.png" alt="">
+								</div>								
+							</div>
+							<div class="swiper-slide">					
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_4.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_4.png" alt="">
+								</div>								
+							</div>
+							<div class="swiper-slide">							
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_5.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_5.png" alt="">
+								</div>								
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_1.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_1.png" alt="">
+								</div>
+							</div>	
+							<div class="swiper-slide">
+								<div class="swiper_img">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_2.png" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/intro_element_icon_2.png" alt="">
+								</div>
+							</div>						
+						</div>						
+					</div>
+
+
+
+				</section>
+				<section id="sec3">
+					<div class="sec3_box">
+						<div class="sec3_flexbox">
+							<div class="sec3_title">
+								<h1>오설록의 제주 차밭</h1>
+								<p>
+									약 100만 평에 달하는 3개의 오설록 유기농 차밭은 화산섬의 지역적 기후 환경에 따라 각각의 색과 향, 그리고 맛이 특별한 차를 생산하고 있습니다.
+								</p>
+								<button>유기농/품질관리 인증 정보(Click here!)</button>
+							</div>
+							<div class="sec3_img">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="modal-backdrop"></div>
+					<div id="sec3_modal">
+						<div class="sec3_modal_title">
+							<p>유기농/품질관리 인증 정보</p>
+							<button class="close">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt="">
+							</button>
+						</div>
+						<div class="sec3_modal_body">
+							<div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_1.png" alt="">
+									<p>USDA-NOP
+										<br>
+										미농무성 국가 유기 인증
+									</p>
+								</div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_2.png" alt="">
+									<p>
+										유럽유기농인
+									</p>
+								</div>
+							</div>
+							<div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_3.png" alt="">
+									<p>한국유기농인</p>
+								</div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_4.png" alt="">
+									<p>한국유기가공식품인증</p>
+								</div>
+							</div>
+							<div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_5.png" alt="">
+									<p>식품안전관리인증</p>
+								</div>
+								<div><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/kc_mark_6.png" alt="">
+									<p>식품안전경영시스템</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="sec4">
+					<div class="sec4_box1">
+						<div class="sec4_box1_text">
+							<h1>
+								색이 좋은 서광 차밭
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_soil.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_fog.png" width="100px" alt="">
+								</div>
+								
+							</h1>
+							<p>산방산 근처의 서광 차밭은 대기가 한라산을 지나며 많은 구름과 안개를<br>
+								형성하고, 이는 자연 차광 효과를 내 찻잎의 색을 좋게 만듭니다. 온화한<br>
+								기후와 자연 차광 효과는 고급 품질의 차를 만들 때 더없이 좋은 생육<br>
+								조건이 됩니다.
+							</p>
+							<button>주요 생산 제품</button>
+							<div class="sec4_loca"> 
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
+								제주특별자치도 서귀포시 안덕면 신화역사로 36
+							</div>
+						</div>	
+						<div class="modal-backdrop"></div>
+						<div class="sec4_box1_modal">
+							<div class="sec4_box_modal_title">
+								<p>주요 생산제품</p>
+								<button class="close"><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt=""></button>
+							</div>
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_1.png" alt="">
+								<p>프리미엄 말차</p>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="sec4_box2">
+						<div class="sec4_box2_text">
+							<h1>
+								향이 좋은 돌송이 차
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_light.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_water.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_wind.png" width="100px" alt="">
+								</div>
+								
+							</h1>
+							<p>돌송이 차밭 지역은 예로부터 화산재가 굳어서 돌멩이같이 잘게 부서진
+								<br>
+								화산송이가 많아 ‘돌송이’라고 불리어 왔습니다. 이곳은 산과 바다를
+								<br>
+								동시에 접하고 있어 매년 4월 한라산의 잔설을 품은 산바람과 바다의
+								<br>
+								수분을 머금은 바닷바람이 밤낮으로 불어와 돌송이 차밭에서 채엽한
+								<br>
+								차는 향이 매우 좋습니다.
+							</p>
+							<button>주요 생산 제품</button>
+							<div class="sec4_loca"> 
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
+								제주특별자치도 서귀포시 중산간서로356번길 152-41
+							</div>
+						</div>
+						<div class="modal-backdrop"></div>
+						<div class="sec4_box2_modal">
+							<div class="sec4_box_modal_title">
+								<p>주요 생산제품</p>
+								<button class="close"><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt=""></button>
+							</div>
+							<div class="sec4_box_modal_body">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_2.png" alt="">
+								<p>일로향</p>
+							</div>
+						</div>
+					</div>
+					<div class="sec4_box3">
+						<div class="sec4_box3_text">
+							<h1>
+								맛이 좋은 한남 차밭
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_soil.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_water.png" width="75px" alt="">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_wind.png" width="100px" alt="">
+								</div>
+								
+							</h1>
+							<p>과거 ‘해들이밭’이라 하여 마을에서 가장 먼저 해가 드는 곳이라 불렸던
+								<br>
+								한남 차밭은 온화한 기후에서 성장해 차나무가 어리고 아미노산 함량이
+								<br>
+								높아 뛰어난 맛을 선사합니다.
+							</p>
+							<button>주요 생산 제품</button>
+							<div class="sec4_loca"> 
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_icon_map.svg" width="25px" alt="">
+								제주특별자치도 서귀포시 중산간서로356번길 152-41
+							</div>
+						</div>
+						<div class="modal-backdrop"></div>
+						<div class="sec4_box3_modal sec4_box3_modal_3">
+							<div class="sec4_box_modal_title">
+								<p>주요 생산제품</p>
+								<button class="close"><img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/modal_close_btn.svg" alt=""></button>
+							</div>
+							<div class="sec4_box_modal_bigbody">
+								<div class="sec4_box_modal_body">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_3.png" alt="">
+									<p>홍우전</p>
+								</div>
+								<div class="sec4_box_modal_body">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_4.png" alt="">
+									<p>제주화산암차</p>
+								</div>
+								<div class="sec4_box_modal_body">
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/tea_field_product_5.png" alt="">
+									<p>청우롱</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</section>
+				<section id="sec5">
+					<div class="sec5_title">
+						<h1>오설록의 차가 특별한 이유</h1>
+						<p>1979년, 돌과 바람이 전부였던 제주의 땅에서 시작해 최고의 차를 생산하기까지,<br>
+						오설록의 차가 특별한 이유를 만나보세요. </p>
+					</div>
+
+					<div class="sec5_body">
+
+						<!-- 박스1 -->
+						<div class="sec5_box">
+							<div class="sec5_box_title colorbox1">
+								<h1>자연을 숨쉬게 <br> 하는 차밭 </h1>
+								<div>
+									<button class="sec5_box_btn1">자연을 지키는 유기농 차밭</button>
+									<button class="sec5_box_btn2">Farm to Cup</button>
+								</div>
+							</div>
+							<div class="sec5_box_body1">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/speciality_item_bg_1_1.png" alt="">
+								<p>
+									제주 오설록의 유기농 차밭은 연간 <br>11,176톤의 이산화탄소를 흡수합니다. <br>이는 과수작물 대비 3배 이상의 탄소 <br>축적 효과가 있습니다. 차 나무는 <br>인류에게 건강한 차를 제공하며 동시에<br> 지구의 건강한 환경에도 기여하고<br> 있습니다.
+								</p>
+							</img>
+						</div>
+						<div class="sec5_box_body2">
+							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/speciality_item_bg_2_1.png" alt="">
+							<p>
+								오설록은 믿을 수 있는 품질의 차를 
+								<br>생산하기 위해 직접 차 나무를 재배하고
+								<br>찻잎을 가공하여 차 제품을 고객에게 
+								<br>전달하기까지 전 과정을 통합적으로 
+								<br>관리하고 있습니다.
+							</p>
+						</img>
+					</div>
+				</div>
+
+				<!-- 박스2 -->
+
+				<div class="sec5_box">
+					<div class="sec5_box_title colorbox2">
+						<h1>그대로의 제주<br>담은 </h1>
+						<div>
+							<button class="sec5_box_btn1">제주의 향기를 담다</button>
+							<button class="sec5_box_btn2">제주와 상생하는 차</button>
+						</div>
+					</div>
+					<div class="sec5_box_body1">
+						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/speciality_item_bg_3_1.png" alt="">
+						<p>
+							제주의 겨울 바닷바람을 이기고 핀 
+							<br>제주 동백꽃, 제주의 돌담길을
+							<br> 걸을 때 풍겨오는 제주 귤꽃,
+							<br>하얗게 수놓은 제주 자생종인 
+							<br>왕벚꽃, 일 년에 단 열흘만 꽃을
+							<br> 피우는 제주 한란 등 제주에 
+							<br>서식하는 꽃을 '헤드스페이스'
+							<br>기법을 통해 원물의 훼손없이
+							<br> 꽃향을 포집하여 제주의 향기
+							<br>그대로 차에 담았습니다.
+							
+						</p>
+					</img>
+				</div>
+				<div class="sec5_box_body2">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/speciality_item_bg_4_1.png" alt="">
+					<p>					
+						오설록의 블렌디드는 제주의 꽃과 <br> 과일을 담고 있습니다. 제주의 <br> 땅에서 난 것들로 차를 만들며 <br> 제주의 자연과 상생하고 있습니다.
+					</p>
+				</img>
+			</div>
+		</div>
+
+
+
+	</div>
+</section>
+<section id="sec6">
+	<div class="sec6_title">
+		<h1>Since 1979</h1>
+		<p>차밭을 개간한 집념을 근간으로 차를 재배하고, 가공 발효하여 세계적으로 권위있는 명차 대회에서<br>
+		꾸준히 수상을 이어가며 증명된 오설록의 차는 이제 전 세계의 사람들과 만나고 있습니다.</p>
+	</div>
+	<div class="swiper mySwiper_sec6">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_01.jpg" alt="">
+				<h2>1979</h2>
+				<p>우리의 전통 차문화 정립을 위함 차 사업의 시작 제주돌송이차밭 부지 돌밭 개간 착</p>
+			</div>
+			<div class="swiper-slide">
+				<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1980.jpg" alt="">
+				<h2>1980</h2>
+				<p>설록차 브랜드 발매<br>첫번째 녹차,천수,백수 출시</p>
+			</div>
+			<div class="swiper-slide">
+				<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1983.jpg" alt="">
+				<h2>1983</h2>
+				<p>국내 최초 차 전문 매거진 태평양<설록차> 창간</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_02.jpg" alt="">
+					<h2>1984</h2>
+					<p>서광 차밭 조성</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1993.jpg" alt="">
+					<h2>1993</h2>
+					<p>고급 잎녹차를 우려낸 한국 최초 캔녹차 출시</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1995.jpg" alt="">
+					<h2>1995</h2>
+					<p>과학적 기계관리가 용이한 한남차밭 조성</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1999.jpg" alt="">
+					<h2>1999</h2>
+					<p>설로명차 일로향 출시</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_04.jpg" alt="">
+					<h2>2001</h2>
+					<p>제주 오설록 티뮤지엄 개관</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_2020.jpg" alt="">
+					<h2>2010</h2>
+					<p>독일 IF디자인 어워드 패키지 부문 수상(순수차)</p>
+				</div>
+			</div>
+			<!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+	</section>
+	<section id="sec7">
+		<div class="sec7_title">
+			<h1>사람, 차를 만나다</h1>
+			<p>억척스런 제주 사람의 손조차 한 번도 닿지 않은 채 버려진 세 곳의 땅을<br>
+				제주의 자연을 이해하고 극복하며 한국의 차 문화를 잇기 위해 개간된 제주의 땅은<br>
+			45년이 지난 지금 세계적인 차 산지로 손꼽히는 최고의 차 재배지로 거듭났습니다.</p>
+		</div>
+
+		<!-- Swiper -->
+		<div class="swiper mySwiper_sec7">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg" />
+					<p>돌송이차밭 계획 부지에서 고 장원 서성환 회장과 일행</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_2.jpg" />
+					<p>서광 차밭 <br>차묘목 식재 작업</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_3.jpg" />
+					<p>손으로 찻잎을 채엽하는 모습</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_4.jpg" />
+					<p>차나무를 정성스럽게 살펴보는<br>고 장원 서성환 회장</p>
+				</div>
+
+
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="sec8">
+		<div class="sec8_title">
+			<h1>다다일상, <br>
+			차와 함께하는 삶</h1>
+			<p>차를 마시는 것은 일상의 쉼을 가지며, 나를 이끌어내고 세상을 따뜻하게 바라보는 것에 관한 일입니다. <br>
+			당신이 언제 어디에 있든 차와 함께 삶의 아름다운 여백을 만들어 나가길 바랍니다.</p>
+		</div>
+
+		<div class="sec8_body">
+			<div class="sec8_box">
+				
+				<div class="sec8_doublebox">
+					<div>
+						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_1.jpg" alt="">
+					</div>
+					<div>
+						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_2.jpg" alt="">
+					</div>
+				</div>
+				<div class="sec8_singlebox">
+					<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_3.jpg" alt="">
+					<div class="sec8_singlebox_txtbox">
+						<p class="sec8_singlebox_txt1">차 한 잔은 차분하게 하루를 정리하고 내일로 <br>한 걸음 더 나아가게 만드는 기분이 들어요. <br>하루를 마무리하는 온점 같은 시간이라고 할까.</p>
+						<p class="sec8_singlebox_txt2">가구 브랜드 대표 양윤선</p>
+					</div>
+				</div>
+				<div class="sec8_doublebox">
+					<div>
+						<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_4.jpg" alt=""></div>
+						<div>
+							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_5.jpg" alt=""></div>
+						</div>
+					</div>
+
+
+					<div class="sec8_box">
+						<div class="sec8_doublebox">
+							<div>
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_6.jpg" alt="">
+							</div>
+							<div>
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_7.jpg" alt="">
+							</div>
+						</div>
+						<div class="sec8_singlebox">
+							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_8.jpg" alt="">
+							<div class="sec8_singlebox_txtbox">
+								<p class="sec8_singlebox_txt1">운동을 매일 하는 것도 중요하지만 가장 신경<br> 쓰는 부분은 수분 보충이에요. 운동 전에 물을 <br>마시고 운동을 마치면 따뜻한 차를 마셔요.</p>
+								<p class="sec8_singlebox_txt2">러닝 트레이너 임소영</p>
+							</div>
+						</div>
+						<div class="sec8_singlebox">
+							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_9.jpg" alt="">
+							<div class="sec8_singlebox_txtbox_top">
+								<p class="sec8_singlebox_txt1">후각이 예민하다 보니 차를 마실 때도 향을 가장<br> 신경 써요. 좋은 향을 내는 차가 심신에 안정을 <br>줘서 더 즐기게 됐어요.</p>
+								<p class="sec8_singlebox_txt2">채식 요리 연구가 신주하</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sec8_box">
+						<div class="sec8_singlebox">
+							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_10.jpg" alt="">
+							<div class="sec8_singlebox_txtbox_top">
+								<p class="sec8_singlebox_txt1">작업에 집중하기 시작하면 쉴 틈이 없는 제게,<br> 차 한잔의 여유는 정말 소중하거든요.</p>
+								<p class="sec8_singlebox_txt2">테이핑 아티스트 박건우</p>
+							</div>
+						</div>
+						<div class="sec8_singlebox">
+							<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_11.jpg" alt="">
+							<div class="sec8_singlebox_txtbox">
+								<p class="sec8_singlebox_txt1">차가운 공기 때문인지 진한 자연의 냄새와 <br>차 향이 함께 느껴지는데 집에서 마실 <br>때와는 또 다르더라고요.</p>
+								<p class="sec8_singlebox_txt2">오지 캠퍼 강서구</p>
+							</div>
+						</div>
+						<div class="sec8_doublebox">
+							<div>
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_12.jpg" alt=""></div>
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/dada_13.jpg" alt=""></div>
+								</div>
+							</div>
+
+
+						</div>
+
+					</section>
+					<section id="sec9">
+						<div class="sec9_title">
+							<h1>오설록의 더 많은 이야기를 만나보세요.</h1>
+						</div>
+						<div class="sec9_body">	
+							<div><a href="subpage4.html">다다일상 > </a></div>
+							<div><a href="subpage2.html">베스트 제품 > </a></div>
+							<div><a href="subpage1.html">위클리 베스트 제품 > </a></div>
+							<div><a href="">선물추천! > </a></div>
+						</div>
+						
+					</section>
+
+
+
+
+
+
+					<section id="footer">
+						<div class="footer_tgBox">
+							<div>오설록 사업자 정보확인</div>
+							<button id="toggleFooter">>Click!<</button>
+						</div>
+						<div class="mini_footer">					
+							<div class="hide_footer_txt">
+								<p>㈜ 오설록<br>
+									대표이사 : 서혁제<br>
+									주소 : 서울 특별시 용산구 한강대로 100 (한강로2가)<br>
+									사업자 등록번호 : 390-87-01499<br>
+									통신판매업신고번호 : 2019-서울용산-1173호<br>
+									호스팅제공자 : ㈜오설록<br>
+									<br>
+									(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 <br>
+									통신판매중개자 이며 통신판매의 당사자가 아닙니다.<br>
+									따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.<br>
+									<br>
+									NHN KCP 구매안전(에스크로)서비스<br>
+									고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한<br> 
+								NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
+							</div>
+							<hr>
+							<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>									
+						</div>
+
+						<div class="footer_login">
+							<div class="footer_login_box">
+								  <a href="loginMember.html"><p>로그인</p></a>
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="">
+								<img src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="">
+								<img src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="">
+							</div>
+						</div>
+						<div class="footer_top">
+							<div class="footer_top_info">
+								<div class="footer_top_info_left">
+									<p class="footer_top_info_left_title">고객상담센터 · 주문/배송문의</p>
+									<p class="footer_top_info_left_email">help@osulloc.com</p>
+									<p class="footer_top_info_left_tell">080-805-5555</p>
+									<p class="footer_top_info_left_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+								</div>
+								<div class="footer_top_info_right">
+									<p class="footer_top_info_right_title">특판, 대량구매 문의</p>
+									<p class="footer_top_info_right_email">mall@osulloc.com</p>
+									<p class="footer_top_info_right_kakao">카카오톡ID : osullocmall</p>
+									<p class="footer_top_info_right_time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+								</div>
+							</div>
+							<div class="footer_top_icon">
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="">
+									매장안내
+								</div>
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="">
+									멤버십혜택
+								</div>
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="">
+									단체 및<br>기업구매
+								</div>
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="">
+									1:1문의
+								</div>
+								<div>
+									<img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="">
+									뷰티포인트 <br>추후적립
+								</div>
+							</div>
+						</div>
+						<div class="footer_btm">
+							<a href="index.html">
+								<img class="footer_btm_img1" src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" alt="">
+							</a>
+							<div>
+								<p class="footer_btmtxt1">회사소개 | 서비스이용약관 | 개인정보 처리방침 | 영상정보 처리방침 | 뷰티포인트 | 임직원할인 | 사이트맵 | 전자공고</p>
+								<p class="footer_btmtxt2">㈜ 오설록<br>
+									대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 <br> 통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록</p>
+									<p class="footer_btmtxt3">주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>
+								</div>
+								<img class="footer_btm_img2" src="img/footerLogo.png" alt="">
+
+							</div>
+
+						</section>
+
+					</div>
+
+					<script>
+		
+
+$(function () {
+
+	// ==============================섹션2 스위퍼===============================
+						var swiper = new Swiper(".mySwiper1", {
+							spaceBetween: 30,
+							effect: "fade",
+							loop: true,
+							navigation: {
+								nextEl: ".swiper-button-next",
+								prevEl: ".swiper-button-prev",
+							},
+							pagination: {
+								el: ".swiper-pagination",
+								clickable: true,
+							},
+						});
+		
+
+	// ==============================섹션6 스위퍼===============================
+						var swiper = new Swiper(".mySwiper_sec6", {
+							slidesPerView: 5,
+							centeredSlides: true,
+							spaceBetween: 30,
+							grabCursor: true,
+							loop: true,
+							scrollbar: {
+								el: ".swiper-scrollbar",
+							},
+							pagination: {
+								el: ".swiper-pagination",
+								clickable: true,
+							},
+						});
+
+
+	// ==============================섹션7 스위퍼===============================
+						var swiper = new Swiper(".mySwiper_sec7", {
+							effect: "coverflow",
+							grabCursor: true,
+							slidesPerView: 1,
+							loop: true,
+							centeredSlides: true,
+							slidesPerView: "auto",
+							coverflowEffect: {
+								rotate: 0,
+								stretch: 0,
+								depth: 100,
+								modifier: 1,
+								slideShadows: true,
+							},
+							pagination: {
+								el: ".swiper-pagination",
+							},
+						});
+			});
+
+					</script>
+
+
+				</body>
+				</html>
