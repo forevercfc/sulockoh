@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*, dao.MemberDAO, dto.MemberDTO"%>
 <%@ page import="javax.servlet.http.HttpSession"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,24 +31,7 @@
     .material-symbols-outlined {
       font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
     }
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
 
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
 
     * {
       margin: 0;
@@ -1363,21 +1347,17 @@
             </li>
           </ul>
           <ul id="login">
-            <%
-                if (session != null && session.getAttribute("member") != null) {
-                    MemberDTO member = (MemberDTO) session.getAttribute("member");
-                    String userId = member.getId(); // 사용자 ID 가져오기
-            %>
-                    <li><%= userId %>님  <br>로그인중</li>
-                    <li><a href="../member/logoutMember.jsp">로그아웃</a></li>
-            <%
-                } else {
-            %>
-                    <li><a href="../member/loginMember.jsp">로그인</a></li>
-                    <li><a href="../member/addMember.jsp">회원가입</a></li>
-            <%
-                }
-            %>
+          <c:choose>
+    <c:when test="${not empty sessionScope.memberId}">
+        <li>${sessionScope.memberId}님  <br>로그인중</li>
+        <li><a href="../member/updateMember.jsp">정보수정</a></li>
+        <li><a href="../member/logoutMember.jsp">로그아웃</a></li>
+    </c:when>
+    <c:otherwise>
+        <li><a href="../member/loginMember.jsp">로그인</a></li>
+        <li><a href="../member/addMember.jsp">회원가입</a></li>
+    </c:otherwise>
+</c:choose>
         </ul>
         </div>
       </header>
@@ -1387,7 +1367,8 @@
           <a href="subpage2.html"><li>베스트((subpage2연결))</li></a>
         </ul>
         <ul>
-          <li>티제품</li>
+          <li><a class="nav-link"
+				href='<c:url value="/BoardListAction.do?PageNum=1"/>'>게시판</a></li>
           <li>티 세트</li>
           <li>명차</li>
           <li>녹차/말차</li>
